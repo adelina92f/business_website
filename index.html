@@ -2,53 +2,217 @@
 <html>
 
 <head>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/slider.css" />
+    <script src="https://kit.fontawesome.com/496364196c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <div class="header-info">
-
+            <div class="social-media">
+                <div class="container-media">
+                    <p>Welcome to FinExpert, your expert in managing your finances!</p>
+                    <div class="icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-google-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="logo">
+                    <span class="bracket">[</span>
+                    <span class="fin">Fin</span>
+                    <span>Expert</span>
+                    <span class="bracket">]</span>
+                </div>
+                <div class="location">
+                    <div class="location-box">
+                        <div class="location-icons">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="location-info">
+                            <div class="bold">Mon - Sat: 9:00 - 18:00</div>
+                            <div>Sunday CLOSED</div>
+                        </div>
+                    </div>
+                    <div class="location-box">
+                        <div class="location-icons">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <div class="bold">267 Park Avenue</div>
+                            <div>New York, NY 90210</div>
+                        </div>
+                    </div>
+                    <div class="location-box">
+                        <div class="location-icons">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <div class="bold">(123) 45678910</div>
+                            <div>info@demolink.org</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <nav>
-
+                <div class="navigation">
+                    <div class="dropdown">
+                        <button class="dropbtn home">Home
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Home Variant 2</a>
+                            <button class="dropbtn">Features</button>
+                            <div class="dropdown-content">
+                                <a href="#">Header Default</a>
+                                <a href="#">Header Light</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">About Us
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> Our team</a>
+                            <a href="#">LTeam member profileink 2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Service</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Blog
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> Blog post</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Pages
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Elements </a>
+                            <a href="#">Coming soon</a>
+                            <a href="#">404 Page</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Contacts</button>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
-            <div class="hero-title content-section">
-                <div class="mySlider">
-
+            <section class="hero-title content-section">
+                <div id="myFirstSlider" class="slider">
+                    <div class="slider__holder">
+                        <div class="slider__item">
+                            <img src="images/home-slide-2.jpg" alt="">
+                            <div class="description slide-2">
+                                <h1>Expert Financial Advice</h1>
+                                <p>With over 20 years of experience we'll ensure you always get the best guidance</p>
+                                <div class="slider-buttons">
+                                    <a href="#" class="btn btn-blue">Our services</a>
+                                    <a href="#" class="btn btn-white">Purchase now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="images/home-slide-1.jpg" alt="">
+                            <div class="description slider-1">
+                                <h1>Solutions that never miss the aim</h1>
+                                <div class="slider-buttons ">
+                                    <a href="#" class="btn btn-blue">Learn more</a>
+                                    <a href="#" class="btn btn-grey">Our service</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="images/home-slide-2.jpg" alt="">
+                            <div class="description slide-2">
+                                <h1>Expert Financial Advice</h1>
+                                <p>With over 20 years of experience we'll ensure you always get the best guidance</p>
+                                <div class="slider-buttons">
+                                    <a href="#" class="btn btn-blue">Our service</a>
+                                    <a href="#" class="btn btn-white">Purchase now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="images/home-slide-1.jpg" alt="">
+                            <div class="description slider-1">
+                                <h1>Solutions that never miss the aim</h1>
+                                <div class="slider-buttons">
+                                    <a href="#" class="btn btn-blue">Learn mores</a>
+                                    <a href="#" class="btn btn-grey">Our service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__actions">
+                        <button class="slider__control control" data-image="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider__control control" data-image="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="slider__paging">
+                    </div>
                 </div>
-            </div>
+            </section>
             <div class="service">
                 <div class="box-service">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h2>Financial Planning</h2>
+                    <p>We'll help you make sensible decisions about money that can help you achieve your goals in life.</p>
+                </div>
+                <div class="box-service">
+                    <i class="fas fa-mug-hot"></i>
+                    <h2>Retirement Planning</h2>
+                    <p>Use our strategies and retirement advice, including retirement calculators to help you retire faster.</p>
+                </div>
+                <div class="box-service">
+                    <img src="images/icon-chart-41x36.png" alt="">
+                    <h2>Risk Management</h2>
+                    <p>Risk management is intended to manage financial and other losses associated with risks to your assets
+                        or business.</p>
 
                 </div>
                 <div class="box-service">
-
-                </div>
-                <div class="box-service">
-
-                </div>
-                <div class="box-service">
-
+                    <img src="images/icon-case-42x39.png" alt="">
+                    <h2>Taxation</h2>
+                    <p>Tax planning considers the tax implications of business decisions, usually with the goal of minimizing
+                        tax liability.</p>
                 </div>
             </div>
             <div class="what-we-do">
-                <div class="element">
-
-                </div>
-                <div class="element">
-
-                </div>
-                <div class="element">
-
+                <img src="images/bg-image-2.jpg" alt="">
+                <div class="container-what-we-do">
+                    <div class="element">
+                        <h1>What We Do</h1>
+                    </div>
+                    <div class="element">
+                        <p>|</p>
+                    </div>
+                    <div class="element">
+                        <p>We provide expert financial advice for businesses and individuals</p>
+                    </div>
+                    <div class="element">
+                        <a href="#" class="btn btn-blue"> See All Service</a>
+                    </div>
                 </div>
             </div>
             <div class="about-us">
@@ -104,7 +268,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
