@@ -202,6 +202,8 @@ nav{
 }
 
 .about-us h1{
+    font-size: 45px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -216,16 +218,17 @@ nav{
 table{
     border-collapse: collapse;
     border-spacing: 0;
+    margin-bottom: 30px;
 }
 
 .buttons table th{
-    padding: 20px 40px;
+    padding: 20px 50px;
     border: 2px solid #C0C0C0;
 }
 
 table th a{
     text-decoration: none;
-    color: #000;
+    color: #686868;
 }
 
 .buttons table th:hover{
@@ -249,11 +252,16 @@ table th a{
 .info-button table th{
     border: none;
     color: #323946;
-    padding: 0px 20px 0 20px;
+    padding: 0px 35px 0 35px;
 }
 
 .info-button table th{
     border-right: 2px solid #C0C0C0;
+}
+
+.info-button p{
+    margin-bottom: 30px;
+    color: #686868;
 }
 
 .info-button .last-th{
@@ -270,4 +278,31 @@ table th a{
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+
+.button-container{
+    width: 46%;
+}
+
+.right-info{
+    width: 46%;
+}
+
+.right-info h2{
+    margin-bottom: 30px;
+}
+
+.right-info p{
+    color: #686868;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.read-more{
+    border: 2px solid #60B8DE;
+    padding: 10px 25px;
+    color: #60B8DE;  
+    text-decoration: none;
+    border-radius: 8px;
+    float: left;
 }
