@@ -137,7 +137,7 @@ nav{
     display: flex;
     justify-content: space-between;
    margin-top: 30px;
-   margin-bottom: 30px;
+   margin-bottom: 45px;
 }
 
 .service h1{
@@ -181,11 +181,93 @@ nav{
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 50%;
+    top: 45%;
+    left: 12%;
     color: #ffffff;
 }
 
 .container-what-we-do h1{
     margin-left: 40px;
     font-size: 36px;
+}
+
+.container-what-we-do p{
+    font-size: 20px;
+}
+
+.about-us{
+    text-align: center;
+    margin-top: 55px;
+    font-weight: bold;
+}
+
+.about-us h1{
+    margin-bottom: 20px;
+}
+
+.border-bottom{
+    background: #24A3D8;
+    height: 5px;
+    width: 60px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.buttons table th{
+    padding: 20px 40px;
+    border: 2px solid #C0C0C0;
+}
+
+table th a{
+    text-decoration: none;
+    color: #000;
+}
+
+.buttons table th:hover{
+    border: 2px solid #24A3D8;
+    background: #24A3D8;
+}
+
+.buttons table th a:hover{
+    color: #ffffff;
+}
+
+.facts{
+    border: 2px solid #24A3D8;
+    background: #24A3D8;  
+}
+
+.facts a{
+    color: #ffffff;
+}
+
+.info-button table th{
+    border: none;
+    color: #323946;
+    padding: 0px 20px 0 20px;
+}
+
+.info-button table th{
+    border-right: 2px solid #C0C0C0;
+}
+
+.info-button .last-th{
+    border: none;
+}
+
+.info-button .blue-number{
+    font-size: 50px; 
+    color: #24A3D8; 
+}
+
+.container-about-us{
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
