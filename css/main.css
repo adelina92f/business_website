@@ -199,6 +199,7 @@ nav{
     text-align: center;
     margin-top: 55px;
     font-weight: bold;
+    margin-bottom: 60px;
 }
 
 .about-us h1{
@@ -305,4 +306,49 @@ table th a{
     text-decoration: none;
     border-radius: 8px;
     float: left;
+}
+
+.calculator{
+    width: 1024px;
+    margin: auto;
+}
+
+form{
+    position: absolute;
+    float: left;
+    width: 60%;
+}
+
+.container-calculator{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.calculator h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.calculator .border-bottom{
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.calculator img{
+    float: right;
+    position: relative;
+}
+
+.calculator input{
+    padding: 8px;
+    margin: 10px 0;
+}
+
+input{
+    background: #F4F7F9;
+}
+
+.total{
+    border-bottom: 2px solid #24A3D8;
 }
