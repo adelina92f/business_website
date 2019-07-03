@@ -4,76 +4,129 @@
     margin: 0;
 }
 
+body{
+    color: #000;
+    font-size: 16px;
+}
+
+.wrapper{
+    width: 100%;
+}
+.wrapp{
+    max-width: 1024px;
+    margin: auto;
+}
+
 .social-media{
     background: #F2F2F5;
     padding: 15px 0px;
+    width: 100%;;
 }
 
 .container-media{
-    width: 1024px;
     margin: auto;
+}
+
+.container-media a{
+    text-decoration: none;
 }
 
 .icons{
     float: right;
     font-size: 20px;
-    color: gray;
+    color: #C0C0C0;
+    margin-right: 15px;
 }
 
-.fa-facebook:hover{
-    color:#ffff;
-} 
-
-.fa-twitter-square:hover{
-    color:#ffff;
-} 
-
-.fa-google-plus:hover{
-    color:#ffff;
+.icons a{
+    text-decoration: none;
+    color: #686868;
 }
+
+.fa-facebook:hover,
+.fa-twitter-square:hover,
+.fa-google-plus:hover
+{
+    color:#ffff;
+} 
 
 .social-media p{
     display: inline;
 }
 
-.bracket{
-    color: #60B8DE;
+.info{
+    margin-bottom: 30px;
+    display: flex;
 }
 
 .fin{
     font-weight: bold;
 }
 
+.fin,
+.expert{
+    font-size: 36px;
+}
+
+.fin::before,
+.expert::after{
+    color: #24A3D8;
+    font-size: 36px;
+}
+
+.fin::before{
+    content: "[";
+    margin-right: 5px;    
+    font-weight: 100;
+}
+
+.expert::after{
+    content: "]";
+    margin-left: 5px;
+}
+
 .location{
     display: flex;
-    justify-content: space-around;
-    width: 70%;
-    float: right;
+    width: 75%;
+    margin-left: 10%;
 }
 
-.location-icons{
-    float: left;
+.location-box{
+    width: 33%;
+    margin-right: 10px;
 }
 
-.location-icons i{
-    font-size: 30px;
-    margin-right: 15px;
-    color: #60B8DE;
-}
-
-.location-info{
-    float: right;
+.location-info div{
+    margin-left: 40px;
 }
 
 .logo{
-    float: left;
-    font-size: 30px;
+    position: relative;
+    top: 36px;
+    width: 25%;
 }
 
-.info{
-    width: 1024px;
-    margin: auto;
-    padding: 30px 0 0px;
+.first-image::before{
+    content: url(../images/icon-clock-32x32.png);
+    background-repeat: no-repeat;
+    
+}
+
+.second-image::before{
+    content: url(../images/icon-map-marker-25x33.png);
+    background-repeat: no-repeat;
+}
+
+.third-image::before{
+    content: url(../images/icon-phone-28x29.png);
+    background-repeat: no-repeat;
+}
+
+.first-image::before,
+.second-image::before,
+.third-image::before{
+    position: relative;
+    top: 40px;
 }
 
 .dropbtn {
@@ -90,6 +143,7 @@
 }
   
 .dropdown-content {
+    top: 60px;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -109,8 +163,11 @@
   
 .dropdown:hover .dropdown-content {display: block;}
   
+.home{
+    padding-left: 0px;
+}
+
 nav{
-    margin-top: 80px;
     background: #323946;
     color: #ffffff;
 }
@@ -127,14 +184,7 @@ nav{
     color: #44BEF1;
 }
 
-.navigation{
-    width: 1024px;
-    margin: auto;
-}
-
 .service{
-    width: 1024px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
    margin-top: 30px;
@@ -166,8 +216,7 @@ nav{
     text-align: center;
 }
 
-.what-we-do{
-    height: 180px;   
+.what-we-do{   
     position: relative; 
 }
 
@@ -177,14 +226,12 @@ nav{
 }
 
 .container-what-we-do{
-   width: 1024px; 
-   margin: auto;
     position: absolute;
     display: flex;
     justify-content: space-between;
     top: 45%;
-    left: 12%;
     color: #ffffff;
+    left: 10%;
 }
 
 .container-what-we-do h1{
@@ -194,6 +241,7 @@ nav{
 
 .container-what-we-do p{
     font-size: 20px;
+    margin-right: 8px;
 }
 
 .about-us{
@@ -276,8 +324,6 @@ table th a{
 }
 
 .container-about-us{
-    width: 1024px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -310,8 +356,6 @@ table th a{
 }
 
 .calculator{
-    /*width: 1024px;
-    margin: auto;*/
     margin-bottom: 40px;
     background: #F4F4F4;
     height: 654px;
@@ -371,14 +415,7 @@ input{
     width: 100%;
 }
 
-.color-container{
-   width: 1024px;
-   margin: auto;
-}
-
 .container-people{
-    width: 1024px;
-    margin: auto;
     display: flex;
     justify-content: space-around;
     margin-bottom: 60px;
@@ -403,27 +440,25 @@ input{
     border-radius: 50%;   
 }
 
-.left-line{
-    position: absolute;
-    border: 1px solid #F4F7F9;
-    width: 23%;
-    top: 17%;
-    left: 5%;;   
-}
-
-.right-line{
-    position:absolute;
-    border: 1px solid #F4F7F9;
-    width: 23%;
-    top: 17%;
-    left: 68%;
-}
-
 .holder-opinion{
     box-shadow: 0px 0px 5px 0px rgba(244,244,244,1);
     position: relative;
     width: 27%;
     padding: 25px 15px 15px 15px;
+}
+
+.image::before,
+.image::after{
+    content: ' ';
+    width: 50px;
+    border-bottom: 2px solid #EBEBEB;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+}
+
+.image image{
+    margin: 0 8px 0 8px;
 }
 
 .holder-opinion h3{
@@ -435,4 +470,128 @@ input{
     text-align: center;
     color: #A1A1A1;
     margin-bottom: 15px;
+}
+
+.logos{
+    width: 100%;
+    background: #F9F9F9;
+    padding: 60px 0;
+}
+
+.container-logos{
+    display: flex;
+    margin: auto;
+}
+
+.logo-box{
+    width: 16%;
+}
+
+footer{
+    background: #323946;
+    color:#fff;
+}
+
+.footer-container{
+    max-width: 1024px;
+    display: flex;
+    margin: auto;
+    padding: 60px 0px 60px 0px;
+}
+
+.footer-box{
+    max-width: 23%;
+    margin: auto;
+}
+
+.footer-box .logo{
+    float: none;
+    margin-bottom: 30px;
+    top: 0px;
+}
+
+.footer-box p{
+    margin-bottom: 15px;
+}
+
+.footer-box .fab{
+    font-size: 25px;
+    margin: 3px;
+}
+
+.fab.fa-facebook{
+    margin-left: 50px;
+}
+
+.fa-minus{
+    font-size: 5px;
+    width: 100%;
+}
+
+.footer-box a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 22px;
+    font-size: 15px;
+}
+
+.footer-nav-box{
+    display: flex;
+}
+
+  /*.phone::before{
+   content: url(../images/icon-phone-28x29.png);
+    background-repeat: no-repeat;
+    width: 15px;
+}*/
+
+.fa-phone-alt,
+.fa-envelope,
+.fa-clock,
+.fa-map-marker-alt{
+    margin-right: 15px;
+    color: #24A3D8;
+    font-size: 20px;
+}
+
+.footer-box h3{
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #616873;
+    margin-bottom: 20px;
+}
+
+.footer-box a:hover{
+    color: #24A3D8;
+}
+
+.left-box a,
+.right-box a{
+    color: #616873;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+button{
+    float:right;
+    padding: 10px 10px;
+    border: none;
+    color: #fff;
+    background: #24A3D8;
+    border-radius: 0 5px 5px 0;
+}
+
+.footer-box{
+    margin-top: 0px;
+}
+
+.owner{
+    background: #282E3A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
