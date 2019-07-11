@@ -1,10 +1,10 @@
 *{
-    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
 
-body{
+body{   
+    font-family: 'Roboto', sans-serif;
     color: #000;
     font-size: 16px;
 }
@@ -12,33 +12,69 @@ body{
 .wrapper{
     width: 100%;
 }
-.wrapp{
+.page-content{
     max-width: 1024px;
     margin: auto;
 }
 
-.social-media{
+.top-header{
     background: #F2F2F5;
     padding: 15px 0px;
     width: 100%;;
 }
 
-.container-media{
-    margin: auto;
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.container-media a{
+.service .row .col{
+    margin-right: 2%;
+    flex: 1;
+}
+
+.service .row .col:last-of-type{
+    margin: 0;  
+}
+
+.box-item{
+flex: 1;
+}
+
+.logo{
+    padding-top: 30px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000;
+}
+
+.information{
+    margin-right: 25px;
+}
+
+.information:last-of-type{
+    margin-right: 0;
+}
+
+/*.container{
+    margin: auto;
+}*/
+
+.container a{
     text-decoration: none;
 }
 
-.icons{
-    float: right;
+.social-links{
     font-size: 20px;
     color: #C0C0C0;
     margin-right: 15px;
 }
 
-.icons a{
+.social-links a{
     text-decoration: none;
     color: #686868;
 }
@@ -50,13 +86,12 @@ body{
     color:#ffff;
 } 
 
-.social-media p{
+.header p{
     display: inline;
 }
 
-.info{
+.middle-header{
     margin-bottom: 30px;
-    display: flex;
 }
 
 .fin{
@@ -85,25 +120,16 @@ body{
     margin-left: 5px;
 }
 
-.location{
+/*.location{
     display: flex;
     width: 75%;
     margin-left: 10%;
-}
+}*/
 
-.location-box{
-    width: 33%;
-    margin-right: 10px;
-}
+
 
 .location-info div{
     margin-left: 40px;
-}
-
-.logo{
-    position: relative;
-    top: 36px;
-    width: 25%;
 }
 
 .first-image::before{
@@ -149,7 +175,7 @@ body{
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    /*z-index: 1;*/
 }
   
 .dropdown-content a {
@@ -185,10 +211,29 @@ nav{
 }
 
 .service{
-    display: flex;
-    justify-content: space-between;
    margin-top: 30px;
    margin-bottom: 45px;
+}
+
+/*.service .row,
+.about-us .row,
+.calculator .row,
+.testimonials .row
+{
+    flex-wrap: nowrap;
+}*/
+
+.testimonials .row .col{
+    margin-right: 35px;
+}
+
+.about-us .row .col{
+    margin-right: 3%;
+    flex: 1;
+}
+
+.about-us .row .col:last-of-type{
+    margin-right: 0;
 }
 
 .service h1{
@@ -199,7 +244,10 @@ nav{
     color: #44BEF1;
     font-size: 35px;
     padding: 20px;
-    
+}
+
+.service .row .col:nth-last-of-type(){
+    margin-right: 0;
 }
 
 .service img{
@@ -207,8 +255,6 @@ nav{
 }
 
 .box-service{
-    width: 17%;
-    margin: auto;
     text-align: center;
 }
 
@@ -227,16 +273,23 @@ nav{
 
 .container-what-we-do{
     position: absolute;
-    display: flex;
-    justify-content: space-between;
     top: 45%;
     color: #ffffff;
     left: 10%;
 }
 
-.container-what-we-do h1{
+.title{
     margin-left: 40px;
     font-size: 36px;
+}
+
+.line{
+    font-size: 36px;
+    margin: 0 15px;
+}
+
+.information-span{
+    margin-right:45px;
 }
 
 .container-what-we-do p{
@@ -323,19 +376,6 @@ table th a{
     color: #24A3D8; 
 }
 
-.container-about-us{
-    display: flex;
-    justify-content: space-between;
-}
-
-.button-container{
-    width: 46%;
-}
-
-.right-info{
-    width: 46%;
-}
-
 .right-info h2{
     margin-bottom: 30px;
 }
@@ -355,30 +395,34 @@ table th a{
     float: left;
 }
 
+.testimonials{
+    margin-bottom: 30px;
+}
+
+.testimonials .row .col{
+    flex: 1;
+}
+
 .calculator{
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     background: #F4F4F4;
     height: 654px;
+    position: relative;
 }
 
 form{
     position: absolute;
-    float: left;
     width:38%;
-    z-index: 2;
+   /* z-index: 2;*/
     margin: auto;
     box-shadow: 0px 0px 5px 0px rgba(244,244,244,1);
     padding-top: 30px;
     margin-top: 30px;
     padding-left: 25px;
     background: #ffff;
+    height: 100%;
 }
 
-.container-calculator{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
 
 .calculator h1{
     font-size: 45px;
@@ -392,13 +436,12 @@ form{
 
 .calculator img{
     float: right;
-    position: relative;
-    z-index: 1;
 }
 
 .calculator input{
     padding: 15px;
     margin: 10px 0;
+    width: 80%;
 }
 
 input{
@@ -409,16 +452,6 @@ input{
 
 .total{
     border-bottom: 2px solid #24A3D8;
-}
-
-.calculator-box{
-    width: 100%;
-}
-
-.container-people{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 60px;
 }
 
 .title-testimonials{
@@ -442,8 +475,6 @@ input{
 
 .holder-opinion{
     box-shadow: 0px 0px 5px 0px rgba(244,244,244,1);
-    position: relative;
-    width: 27%;
     padding: 25px 15px 15px 15px;
 }
 
@@ -478,36 +509,23 @@ input{
     padding: 60px 0;
 }
 
-.container-logos{
-    display: flex;
-    margin: auto;
-}
-
-.logo-box{
-    width: 16%;
-}
 
 footer{
     background: #323946;
     color:#fff;
+    padding-top: 40px;
 }
 
-.footer-container{
-    max-width: 1024px;
-    display: flex;
-    margin: auto;
-    padding: 60px 0px 60px 0px;
-}
-
-.footer-box{
-    max-width: 23%;
-    margin: auto;
+footer .row .col{
+    flex: 1;
+    padding: 0 25px 0 0;
 }
 
 .footer-box .logo{
     float: none;
     margin-bottom: 30px;
     top: 0px;
+    padding-top: 0;
 }
 
 .footer-box p{
