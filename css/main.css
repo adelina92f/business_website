@@ -23,25 +23,25 @@ body{
     width: 100%;;
 }
 
-.row{
+/*.row{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-}
+}*/
 
-.service .row .col{
+/*.service .row .col{
     margin-right: 2%;
     flex: 1;
-}
+}*/
 
-.service .row .col:last-of-type{
+/*.service .row .col:last-of-type{
     margin: 0;  
-}
+}*/
 
-.box-item{
+/*.box-item{
 flex: 1;
-}
+}*/
 
 .logo{
     padding-top: 30px;
@@ -50,14 +50,6 @@ flex: 1;
 .logo a{
     text-decoration: none;
     color: #000;
-}
-
-.information{
-    margin-right: 25px;
-}
-
-.information:last-of-type{
-    margin-right: 0;
 }
 
 /*.container{
@@ -71,7 +63,6 @@ flex: 1;
 .social-links{
     font-size: 20px;
     color: #C0C0C0;
-    margin-right: 15px;
 }
 
 .social-links a{
@@ -85,6 +76,12 @@ flex: 1;
 {
     color:#ffff;
 } 
+
+.fa-search{
+    padding: 12px;
+    font-size: 23px;
+    text-align: right;
+}
 
 .header p{
     display: inline;
@@ -158,9 +155,9 @@ flex: 1;
 .dropbtn {
     background-color: #323946;
     color: white;
-    padding: 19px;
     font-size: 16px;
     border: none;
+    padding: 20px;
 }
   
 .dropdown {
@@ -175,7 +172,7 @@ flex: 1;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /*z-index: 1;*/
+    z-index: 1;
 }
   
 .dropdown-content a {
@@ -223,18 +220,18 @@ nav{
     flex-wrap: nowrap;
 }*/
 
-.testimonials .row .col{
+/*.testimonials .row .col{
     margin-right: 35px;
-}
+}*/
 
-.about-us .row .col{
+/*.about-us .row .col{
     margin-right: 3%;
     flex: 1;
-}
+}*/
 
-.about-us .row .col:last-of-type{
+/*.about-us .row .col:last-of-type{
     margin-right: 0;
-}
+}*/
 
 .service h1{
     text-align: center;
@@ -246,9 +243,9 @@ nav{
     padding: 20px;
 }
 
-.service .row .col:nth-last-of-type(){
+/*.service .row .col:nth-last-of-type(){
     margin-right: 0;
-}
+}*/
 
 .service img{
     padding: 20px;
@@ -281,6 +278,7 @@ nav{
 .title{
     margin-left: 40px;
     font-size: 36px;
+    color:#fff;
 }
 
 .line{
@@ -378,6 +376,9 @@ table th a{
 
 .right-info h2{
     margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
 }
 
 .right-info p{
@@ -399,9 +400,9 @@ table th a{
     margin-bottom: 30px;
 }
 
-.testimonials .row .col{
+/*.testimonials .row .col{
     flex: 1;
-}
+}*/
 
 .calculator{
     margin-bottom: 60px;
@@ -471,6 +472,8 @@ input{
 
 .image img{
     border-radius: 50%;   
+    width: 30%;
+    margin: auto;
 }
 
 .holder-opinion{
@@ -484,8 +487,17 @@ input{
     width: 50px;
     border-bottom: 2px solid #EBEBEB;
     display: inline-block;
-    position: relative;
-    top: -30px;
+    position: relative;  
+}
+
+.image::before{ 
+    left: -80px;
+    top: 45px;
+}
+
+.image::after{
+    top: -68px;
+    left: 80px;
 }
 
 .image image{
@@ -509,17 +521,16 @@ input{
     padding: 60px 0;
 }
 
-
 footer{
     background: #323946;
     color:#fff;
     padding-top: 40px;
 }
 
-footer .row .col{
+/*footer .row .col{
     flex: 1;
     padding: 0 25px 0 0;
-}
+}*/
 
 .footer-box .logo{
     float: none;
@@ -612,4 +623,8 @@ button{
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+.is-3{
+    text-align: right;
 }
