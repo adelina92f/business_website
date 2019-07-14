@@ -81,6 +81,7 @@ flex: 1;
     padding: 12px;
     font-size: 23px;
     text-align: right;
+    padding-top: 18px;
 }
 
 .header p{
@@ -88,7 +89,7 @@ flex: 1;
 }
 
 .middle-header{
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .fin{
