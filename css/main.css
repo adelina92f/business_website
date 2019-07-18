@@ -3,18 +3,42 @@
     margin: 0;
 }
 
+main{
+    max-height: 100%;
+    flex: 1;
+}
+
 body{   
     font-family: 'Roboto', sans-serif;
     color: #000;
     font-size: 16px;
+    line-height: normal;
+    display:flex;
+    min-height:100vh;
+}
+
+a{
+    text-decoration: none;
 }
 
 .wrapper{
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-.page-content{
+.container{
     max-width: 1024px;
     margin: auto;
+}
+
+.page-header{
+    padding-bottom: 0;
+}
+
+.page-header p{
+    line-height: 20px;
 }
 
 .top-header{
@@ -22,6 +46,32 @@ body{
     padding: 15px 0px;
     width: 100%;;
 }
+
+.middle-header{
+    padding: 15px 0px;;
+}
+
+.brand{
+    font-size: 36px;
+    color: #24A3D8;
+    font-weight: 100;
+}
+
+    .brand span{
+        color: #000;
+        font-weight: 400;
+    }
+        .brand span:first-child {
+            margin:  0 0 0 5px;
+        }
+
+        .brand span:last-child {
+            margin:  0 5px 0 0;
+        }
+
+    .brand strong{
+        font-weight: bold;
+    }
 
 /*.row{
     display: flex;
@@ -43,31 +93,23 @@ body{
 flex: 1;
 }*/
 
-.logo{
-    padding-top: 30px;
-}
-
-.logo a{
-    text-decoration: none;
-    color: #000;
-}
-
-/*.container{
-    margin: auto;
-}*/
-
 .container a{
     text-decoration: none;
 }
 
 .social-links{
     font-size: 20px;
+    line-height: 20px;
     color: #C0C0C0;
+    float:right;
 }
 
 .social-links a{
     text-decoration: none;
-    color: #686868;
+    color: #686868; 
+    margin: 0 0 0 5px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .fa-facebook:hover,
@@ -84,39 +126,45 @@ flex: 1;
     padding-top: 18px;
 }
 
-.header p{
-    display: inline;
+.location-box{
+    position: relative;
+    padding-left: 50px;
+    float: right;
 }
 
-.middle-header{
-    padding-bottom: 30px;
+.location-box > div{
+    font-size: 16px;
 }
 
-.fin{
-    font-weight: bold;
+.location-box a{
+    font-size: 16px;
+    display: block;
 }
 
-.fin,
-.expert{
-    font-size: 36px;
+.location-box::before{
+    contain: "";
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;  
+    background-position: center;
 }
 
-.fin::before,
-.expert::after{
-    color: #24A3D8;
-    font-size: 36px;
+.location-box.first-image::before{
+    content: url(../images/icon-clock-32x32.png);
 }
 
-.fin::before{
-    content: "[";
-    margin-right: 5px;    
-    font-weight: 100;
+.location-box.second-image::before{
+    content: url(../images/icon-map-marker-25x33.png);
 }
 
-.expert::after{
-    content: "]";
-    margin-left: 5px;
+.third-image::before{
+    content: url(../images/icon-phone-28x29.png);
 }
+
 
 /*.location{
     display: flex;
@@ -124,41 +172,12 @@ flex: 1;
     margin-left: 10%;
 }*/
 
-
-
-.location-info div{
-    margin-left: 40px;
-}
-
-.first-image::before{
-    content: url(../images/icon-clock-32x32.png);
-    background-repeat: no-repeat;
-    
-}
-
-.second-image::before{
-    content: url(../images/icon-map-marker-25x33.png);
-    background-repeat: no-repeat;
-}
-
-.third-image::before{
-    content: url(../images/icon-phone-28x29.png);
-    background-repeat: no-repeat;
-}
-
-.first-image::before,
-.second-image::before,
-.third-image::before{
-    position: relative;
-    top: 40px;
-}
-
 .dropbtn {
     background-color: #323946;
     color: white;
     font-size: 16px;
     border: none;
-    padding: 20px;
+    padding: 20px 5px;
 }
   
 .dropdown {
@@ -171,7 +190,7 @@ flex: 1;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -183,9 +202,13 @@ flex: 1;
     display: block;
 }
   
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
   
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
   
 .home{
     padding-left: 0px;
@@ -359,6 +382,7 @@ table th a{
 
 .info-button table th{
     border-right: 2px solid #C0C0C0;
+
 }
 
 .info-button p{
@@ -520,6 +544,7 @@ input{
     width: 100%;
     background: #F9F9F9;
     padding: 60px 0;
+    max-height: 100%;
 }
 
 footer{
