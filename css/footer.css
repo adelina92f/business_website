@@ -1,0 +1,85 @@
+footer{
+    background: #323946;
+    color:#fff;
+    padding-top: 40px;
+}
+
+    .footer-box{
+        margin-top: 0px;
+    }
+
+        .footer-box .logo{
+            float: none;
+            margin-bottom: 30px;
+            top: 0px;
+            padding-top: 0;
+        }
+
+        .footer-box h3{
+            width: 100%;
+            padding-bottom: 20px;
+            border-bottom: 0.5px solid #616873;
+            margin-bottom: 20px;
+        }
+
+        .footer-box p{
+            margin-bottom: 15px;
+        }
+
+        button{
+            float:right;
+            padding: 10px 10px;
+            border: none;
+            color: #fff;
+            background: #24A3D8;
+            border-radius: 0 5px 5px 0;
+        }
+        
+            .footer-box .fab{
+                font-size: 25px;
+                margin: 3px;
+            }
+
+            .fab.fa-facebook{
+                margin-left: 50px;
+            }
+
+        .footer-box a{
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            margin-bottom: 22px;
+            font-size: 15px;
+        }
+
+        .footer-box a:hover{
+            color: #24A3D8;
+        }
+            .left-box a,
+            .right-box a{
+                color: #616873;
+            }
+
+            .fa-phone-alt,
+            .fa-envelope,
+            .fa-clock,
+            .fa-map-marker-alt{
+                margin-right: 15px;
+                color: #24A3D8;
+                font-size: 20px;
+            }     
+        .footer-nav-box{
+            display: flex;
+        }
+
+        .fa-minus{
+            font-size: 5px;
+            width: 100%;
+        }
+
+    .owner{
+        background: #282E3A;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }

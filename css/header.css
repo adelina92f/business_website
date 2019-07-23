@@ -1,0 +1,159 @@
+.page-header{
+    padding-bottom: 0;
+}
+    .top-header{
+        background: #F2F2F5;
+        padding: 15px 0px;
+        width: 100%;;
+    }
+        .page-header p{
+            line-height: 20px;
+        }
+        .social-links{
+            font-size: 20px;
+            line-height: 20px;
+            color: #C0C0C0;
+            float:right;
+        }
+
+            .social-links a{
+                text-decoration: none;
+                color: #686868; 
+                margin: 0 0 0 5px;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+        .fa-facebook:hover,
+        .fa-twitter-square:hover,
+        .fa-google-plus:hover
+        {
+            color:#ffff;
+        } 
+            
+.middle-header{
+    padding: 25px 0px;;
+}
+
+    .brand{
+        font-size: 36px;
+        color: #24A3D8;
+        font-weight: 100;
+    }
+
+        .brand span{
+            color: #000;
+            font-weight: 400;
+        }
+            .brand span:first-child {
+                margin:  0 0 0 5px;
+            }
+
+            .brand span:last-child {
+                margin:  0 5px 0 0;
+            }
+
+        .brand strong{
+            font-weight: bold;
+        }
+      
+.location-box{
+    position: relative;
+    padding-left: 50px;
+    float: right;
+}
+    
+    .location-box > div{
+        font-size: 16px;
+    }
+    
+        .location-box a{
+            font-size: 16px;
+            display: block;
+        }
+
+.location-box::before{
+    contain: "";
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;  
+    background-position: center;
+}
+    
+    .location-box.first-image::before{
+        content: url(../images/icon-clock-32x32.png);
+    }
+    
+    .location-box.second-image::before{
+        content: url(../images/icon-map-marker-25x33.png);
+    }
+    
+    .third-image::before{
+        content: url(../images/icon-phone-28x29.png);
+    }
+        .bold{
+            font-weight: bold;
+        }
+nav{
+    background: #323946;
+    color: #ffffff;
+}
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+        .dropbtn {
+            background-color: #323946;
+            color: white;
+            font-size: 16px;
+            border: none;
+            padding: 20px 5px;
+        }
+        
+            .fa-chevron-down{
+                color: #44BEF1;
+            }
+        
+         .home{
+            color: #44BEF1;
+        }
+        
+        .dropdown-content {
+            top: 60px;
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+      
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+      
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+      
+            .is-3{
+                text-align: right;
+            }
+                .fa-search{
+                    padding: 12px;
+                    font-size: 23px;
+                    text-align: right;
+                    padding-top: 18px;
+                }
