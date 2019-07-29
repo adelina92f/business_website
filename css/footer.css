@@ -52,6 +52,19 @@ footer{
             font-size: 15px;
         }
 
+        .footer-box > .brand{
+            color: #24A3D8;
+            font-size: 30px;
+        }
+
+            .footer-box >.brand span{
+                color: #fff;
+            }
+
+                .footer-box > .brand span:last-child {
+                    margin:  0 5px 0 -5px;
+                }
+
         .footer-box a:hover{
             color: #24A3D8;
         }
