@@ -84,7 +84,7 @@
 }
     
     .location-box.first-image::before{
-        content: url(../images/icon-clock-32x32.png);
+       content: url(../images/icon-clock-32x32.png);
     }
     
     .location-box.second-image::before{

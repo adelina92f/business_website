@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/bulma.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/header.css" />
     <link rel="stylesheet" type="text/css" href="./css/content-section.css" />
     <link rel="stylesheet" type="text/css" href="./css/footer.css" />
@@ -220,7 +221,59 @@
             </nav>
         </header>
         <main>
-            <div class="hero-title content-section">
+            <!-- Swiper -->
+  <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/home-slide-2.jpg" alt="">
+            <div class="description slide-2">
+                <h1>Expert Financial Advice</h1>
+                <p>With over 20 years of experience we'll ensure you always get the best guidance</p>
+                <div class="slider-buttons">
+                    <a href="#" class="btn btn-blue">Our services</a>
+                    <a href="#" class="btn btn-white">Purchase now</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/home-slide-1.jpg" alt="">
+            <div class="description slider-1">
+                <h1>Solutions that never miss the aim</h1>
+                <div class="slider-buttons ">
+                    <a href="#" class="btn btn-blue">Learn more</a>
+                    <a href="#" class="btn btn-grey">Our service</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/home-slide-2.jpg" alt="">
+            <div class="description slide-2">
+                <h1>Expert Financial Advice</h1>
+                <p>With over 20 years of experience we'll ensure you always get the best guidance</p>
+                <div class="slider-buttons">
+                    <a href="#" class="btn btn-blue">Our services</a>
+                    <a href="#" class="btn btn-white">Purchase now</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/home-slide-1.jpg" alt="">
+            <div class="description slider-1">
+                <h1>Solutions that never miss the aim</h1>
+                <div class="slider-buttons ">
+                    <a href="#" class="btn btn-blue">Learn more</a>
+                    <a href="#" class="btn btn-grey">Our service</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination
+        <div class="swiper-pagination"></div> -->
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+            <!--<div class="hero-title content-section">
                 <div id="myFirstSlider" class="slider">
                     <div class="slider__holder">
                         <div class="slider__item">
@@ -277,7 +330,7 @@
                     <div class="slider__paging">
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="service">
                 <div class="container">
                     <div class="columns">
@@ -334,8 +387,6 @@
             </div>
             <div class="about-us">
                 <h1>About Us</h1>
-                <div class="border-bottom">
-                </div>
                 <div class="container">
                     <div class="columns">
                         <div class="column">
@@ -396,34 +447,34 @@
                         <div class="columns">
                             <div class="column">
                                 <div class="form-field">
-                                    <div>Loan Amount</div>
+                                    <label>Loan Amount</label>
                                     <input type="text">
                                 </div>
                                 <div class="form-field">
-                                    <div>Interest Rate %</div>
+                                    <label>Interest Rate %</label>
                                     <input type="text" placeholder="7.5">
-                                    <div class="form-div">Results based in the data entered above:</div>
+                                    <label class="form-label">Results based in the data entered above:</label>
                                 </div>
                                 <div class="form-field">
-                                    <div>Monthly Payment</div>
+                                    <label>Monthly Payment</label>
                                     <input type="text">
                                 </div>
                                 <div class="form-field">
-                                    <div>Total Payment</div>
+                                    <label>Total Payment</label>
                                     <input type="text" class="total">
                                 </div>
                             </div>
                             <div class="column">
                                 <div class="form-field">
-                                    <div>Residual Value</div>
+                                    <label>Residual Value</label>
                                     <input type="text">
                                 </div>
                                 <div class="form-field">
-                                    <div>Number of Months</div>
+                                    <label>Number of Months</label>
                                     <input type="text" placeholder="7.5">
                                 </div>
                                 <div class="form-field">
-                                    <div>Interest Amount</div>
+                                    <label>Interest Amount</label>
                                     <input type="text">
                                 </div>
                             </div>
@@ -571,11 +622,11 @@
                         <div class="column">
                             <div class="footer-box">
                                 <h3>Contact info</h3>
-                                <a href="#" class="phone">
+                                <a href="tel: 12345678910" class="phone">
                                     <i class="fas fa-phone-alt"></i>
                                     (123) 45678910
                                 </a>
-                                <a href="#" class="e-mail">
+                                <a href="mailto:info@demolink.org" class="e-mail">
                                     <i class="far fa-envelope"></i>
                                     info@demolink.org
                                 </a>
@@ -604,6 +655,8 @@
         </footer>
     </div>
 </body>
+<!-- Swiper JS -->
+<script src="./js/swiper.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 <script src="./js/slider.js"></script>
