@@ -72,7 +72,7 @@
         }
 
 .location-box::before{
-    contain: "";
+    content: " ";
     width: 40px;
     height: 40px;
     left: 0;
@@ -84,15 +84,15 @@
 }
     
     .location-box.first-image::before{
-       content: url(../images/icon-clock-32x32.png);
+        background-image: url(../images/icon-clock-32x32.png);
     }
     
     .location-box.second-image::before{
-        content: url(../images/icon-map-marker-25x33.png);
+        background-image: url(../images/icon-map-marker-25x33.png);
     }
     
     .third-image::before{
-        content: url(../images/icon-phone-28x29.png);
+        background-image: url(../images/icon-phone-28x29.png);
     }
         .bold{
             font-weight: bold;

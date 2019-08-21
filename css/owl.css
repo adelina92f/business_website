@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img-fluid{
+    max-width: 30%;
+    height: 100%;
+    display: block;
+}
+
+.owl-dots{
+    display: none;
+}
+
+.owl-carousel .owl-item img{
+    width: 30%;
+}
+
+.owl-next{
+    position: absolute;
+    top: 40%;
+    right: -10%;
+}
+
+.testimonials button:hover{
+    color: aquamarine;
+    background-color: #fff;
+}
+
+.owl-next span,
+.owl-prev span{
+    font-size: 80px;
+}
+
+.owl-prev{
+    position: absolute;
+    top: 40%;
+    left: -10%;
+}

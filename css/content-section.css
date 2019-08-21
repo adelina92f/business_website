@@ -39,19 +39,31 @@
         color: #ffffff;
     }
 
+    .element{
+        vertical-align: middle;
+        height: 100%;
+    }
+
         .title{
             margin-left: 40px;
             font-size: 36px;
             color:#fff;
+            vertical-align: middle;
         }
 
         .line{
             font-size: 36px;
             margin: 0 15px;
+            vertical-align: middle;
         }
 
         .information-span{
             margin-right:45px;
+            vertical-align: middle;
+        }
+
+        .element .btn-blue{
+            vertical-align: middle;
         }
 
 .about-us{
@@ -64,20 +76,25 @@
     .about-us h1{
         font-size: 45px;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
         position: relative;
     }
 
-    .about-us h1::after{
-        display: inline-block;
+    .about-us h1::before{
+       /* display: inline-block;
         font-style: normal;
         font-variant: normal;
         text-rendering: auto;
-        font-family: "Font Awesome 5";
-        font-weight: 900;
-        content: "\f068";
         color: #24A3D8;
+        position: absolute;*/
+        
+        display: inline-block;
+        content: "";
         position: absolute;
+        border-bottom: 4px solid #24A3D8;
+        width: 5%;
+        top: 70px;
+        left:637px
     }
 
     .fa-minus{
@@ -176,7 +193,18 @@
     background: #F4F4F4;
     height: 654px;
     color: #828282;
-    padding-top: 20px;
+    padding-top: 10px;
+}
+
+
+.calculator h1::before{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid #24A3D8;
+    width: 5%;
+    top: 90px;
+    left:23px 
 }
 
 .calculator .container{
@@ -196,7 +224,7 @@
 
         .calculator h1{
             font-size: 45px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         .calculator .border-bottom{
@@ -238,14 +266,24 @@
     margin-bottom: 30px;
 }
 
-    .title-testimonials{
+    .testimonials{
         margin-bottom: 40px;
     }
 
-        .title-testimonials h1{
+        .testimonials h1{
             text-align: center;
             font-size: 45px;
-            margin-bottom: 20px;
+            margin-bottom: 80px;
+        }
+
+        .testimonials h1::before{
+            display: inline-block;
+            content: "";
+            position: absolute;
+            border-bottom: 4px solid #24A3D8;
+            width: 6%;
+            top: 70px;
+            left:480px
         }
 
     .holder-opinion{
