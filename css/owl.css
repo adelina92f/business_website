@@ -23,18 +23,34 @@
     right: -10%;
 }
 
-.testimonials button:hover{
-    color: aquamarine;
+.owl-next span:hover,
+.owl-prev span:hover{
+    color: #67BFE4;
     background-color: #fff;
 }
 
 .owl-next span,
 .owl-prev span{
-    font-size: 80px;
+    font-size: 40px;
+    height: 20%;
 }
 
 .owl-prev{
     position: absolute;
     top: 40%;
     left: -10%;
+}
+
+.testimonials .item{
+    margin-right: 20px;
+    padding: 0%;
+}
+
+.testimonials .no-js .owl-carousel, .owl-carousel.owl-loaded{
+    width: 100%;
+    margin: auto;
+}
+
+.owl-two .owl-item img{
+    width: 100%;
 }

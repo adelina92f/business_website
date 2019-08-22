@@ -3,7 +3,7 @@ $(function(){
   })
 
 function initOwlCarousel(){
-$('.owl-carousel').owlCarousel({
+$('.owl-one').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -19,6 +19,26 @@ $('.owl-carousel').owlCarousel({
         },
         1000:{
             items:3
+        }
+    }
+})
+
+$('.owl-two').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:2700,
+    autoplayHoverPause:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
         }
     }
 })
