@@ -1,6 +1,7 @@
 $(function(){
     initHeroSlider();
-    initActiveButton();
+    // initActiveButton();
+    initTabs();
 })
 
 function initHeroSlider(){
@@ -55,3 +56,32 @@ function initAction(value){
           break;
   }
 }
+
+
+function initTabs(){
+  let $tabs = $('.tabs');
+  let $tabNav = $tabs.find('.tabs-nav');
+  let $tabContent = $tabs.find('.tabs-content');
+
+  $tabNav.on('click', 'a', function(e){ 
+    e.stopPropagation();
+    let $tab = $(this);
+    let target_id = $tab.attr('href');
+    toggle(target_id)
+
+    return false;
+  })
+
+  function toggle(id){
+    let $activeLink = $('[href="'+id+'"]');
+    let $target = $(id);
+
+    $tabNav.find('.active').removeClass('active')
+    $tabContent.find('.active').removeClass('active')
+
+    $activeLink.addClass('active');
+    $target.addClass('active')
+  }
+
+}
+
