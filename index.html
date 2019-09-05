@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant|Roboto|Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/496364196c.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/bulma.css" />
@@ -15,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./css/footer.css" />
     <link rel="stylesheet" type="text/css" href="./css/swiper.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="./css/owl.css">
 </head>
@@ -64,7 +65,7 @@
                                     <div class="location-box first-image">
                                         <div class="location-info">
                                             <div class="bold">Mon - Sat: 9:00 - 18:00</div>
-                                            <div>Sunday CLOSED</div>
+                                            <div class="grey">Sunday CLOSED</div>
                                         </div>
                                     </div>
                                 </div>
@@ -72,16 +73,22 @@
                                 <div class="column">
                                     <div class="location-box second-image">
                                         <div class="location-info">
-                                            <div class="bold">267 Park Avenue</div>
-                                            <div>New York, NY 90210</div>
+                                            <a href="#">
+                                                <div class="bold">267 Park Avenue</div>
+                                                <div class="grey">New York, NY 90210</div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="location-box third-image">
                                         <div class="location-info">
-                                            <div class="bold">(123) 45678910</div>
-                                            <div>info@demolink.org</div>
+                                            <a href="#">
+                                                <div class="bold">(123) 45678910</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="grey">info@demolink.org</div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -97,7 +104,7 @@
                             <div class="column">
                                 <div class="dropdown is-hoverable">
                                     <div class="dropdown-trigger">
-                                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                                        <button class="button home" aria-haspopup="true" aria-controls="dropdown-menu4">
                                             <span>Home</span>
                                             <span class="icon is-small">
                                                 <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -215,7 +222,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column is-5">
+                            <div class="column is-6">
                                 <i class="fas fa-search"></i>
                             </div>
                         </div>
@@ -273,9 +280,14 @@
                 <!-- Add Pagination
         <div class="swiper-pagination"></div> -->
                 <!-- Add Arrows -->
+
+
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
+
+
+
             <!--<div class="hero-title content-section">
                 <div id="myFirstSlider" class="slider">
                     <div class="slider__holder">
@@ -340,7 +352,13 @@
                     <div class="columns">
                         <div class="column">
                             <div class="box-service">
-                                <i class="fas fa-dollar-sign"></i>
+                                <div class="icon-decoration-border">
+                                    <div class="icon-decoration-border-inner">
+                                        <span>
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </span>
+                                    </div>
+                                </div>
                                 <h2>Financial Planning</h2>
                                 <p>We'll help you make sensible decisions about money that can help you achieve your goals in
                                     life.
@@ -349,7 +367,13 @@
                         </div>
                         <div class="column">
                             <div class="box-service">
-                                <i class="fas fa-mug-hot"></i>
+                                <div class="icon-decoration-border">
+                                    <div class="icon-decoration-border-inner">
+                                        <span>
+                                            <i class="fas fa-mug-hot"></i>
+                                        </span>
+                                    </div>
+                                </div>
                                 <h2>Retirement Planning</h2>
                                 <p>Use our strategies and retirement advice, including retirement calculators to help you retire
                                     faster.
@@ -358,7 +382,13 @@
                         </div>
                         <div class="column">
                             <div class="box-service">
-                                <img src="images/icon-chart-41x36.png" alt="">
+                                <div class="icon-decoration-border">
+                                    <div class="icon-decoration-border-inner">
+                                        <span>
+                                            <img src="images/icon-chart-41x36.png" alt="">
+                                        </span>
+                                    </div>
+                                </div>
                                 <h2>Risk Management</h2>
                                 <p>Risk management is intended to manage financial and other losses associated with risks to
                                     your assets or business.
@@ -367,7 +397,13 @@
                         </div>
                         <div class="column">
                             <div class="box-service">
-                                <img src="images/icon-case-42x39.png" alt="">
+                                <div class="icon-decoration-border">
+                                    <div class="icon-decoration-border-inner">
+                                        <span>
+                                            <img src="images/icon-case-42x39.png" alt="">
+                                        </span>
+                                    </div>
+                                </div>
                                 <h2>Taxation</h2>
                                 <p>Tax planning considers the tax implications of business decisions, usually with the goal
                                     of minimizing tax liability.
@@ -390,21 +426,23 @@
                 </div>
             </div>
             <div class="about-us">
-                <h1>About Us</h1>
+                <h1>
+                    <span>About Us</span>
+                </h1>
                 <div class="container">
                     <div class="columns">
                         <div class="column">
                             <div class="button-container">
                                 <div class="buttons">
-                                    <table>
+                                    <table class="activeTable">
                                         <tr>
-                                            <th class="facts">
+                                            <th class="Facts activeBtn" data-action="Facts"> 
                                                 <a href="#">Facts</a>
                                             </th>
-                                            <th>
+                                            <th class="Advantages" data-action="Advantages">
                                                 <a href="#">Advantages</a>
                                             </th>
-                                            <th>
+                                            <th class="Skills" data-action="Skills">
                                                 <a href="#">Skills</a>
                                             </th>
                                         </tr>
@@ -419,7 +457,7 @@
                                             <th class="blue-number">19</th>
                                             <th class="blue-number last-th">130</th>
                                         </tr>
-                                        <tr>
+                                        <tr class="grey-words">
                                             <th>Cases completed</th>
                                             <th>Consultants</th>
                                             <th class="last-th">Awards won</th>
@@ -446,7 +484,9 @@
             <div class="calculator">
                 <div class="container">
                     <form>
-                        <h1>Loan Calculator</h1>
+                        <h1>
+                            <span>Loan Calculator</span>
+                        </h1>
                         <div class="columns">
                             <div class="column">
                                 <div class="form-field">
@@ -456,6 +496,8 @@
                                 <div class="form-field">
                                     <label>Interest Rate %</label>
                                     <input type="text" placeholder="7.5">
+                                </div>
+                                <div class="form-field">
                                     <label class="form-label">Results based in the data entered above:</label>
                                 </div>
                                 <div class="form-field">
@@ -476,7 +518,7 @@
                                     <label>Number of Months</label>
                                     <input type="text" placeholder="7.5">
                                 </div>
-                                <div class="form-field">
+                                <div class="form-field last-form-fild">
                                     <label>Interest Amount</label>
                                     <input type="text">
                                 </div>
@@ -487,7 +529,9 @@
             </div>
             <div class="testimonials">
                 <div class="container">
-                    <h1>Testimonials</h1>
+                    <h1>
+                        <span>Testimonials</span>
+                    </h1>
                     <div class="owl-one owl-carousel owl-theme">
                         <div class="column item">
                             <div class="holder-opinion">
@@ -665,7 +709,7 @@
                                     <span class="expert">Expert</span>
                                     ]
                                 </a>
-                                <p>Welcome to the leading company delivering services that combine quality, reliability and
+                                <p class="footer-info">Welcome to the leading company delivering services that combine quality, reliability and
                                     compliance!
                                 </p>
                                 <p class="Follow-Us">

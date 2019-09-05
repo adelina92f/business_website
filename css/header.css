@@ -8,6 +8,7 @@
     }
         .page-header p{
             line-height: 20px;
+            color: #A0A0A1;
         }
         .social-links{
             font-size: 20px;
@@ -18,7 +19,7 @@
 
             .social-links a{
                 text-decoration: none;
-                color: #686868; 
+                color: #D3D3D3; 
                 margin: 0 0 0 5px;
                 display: inline-block;
                 vertical-align: top;
@@ -38,10 +39,11 @@
     .brand{
         font-size: 36px;
         color: #24A3D8;
-        font-weight: 100;
+        font-weight: normal;
     }
 
         .brand span{
+            font-size: 36px;
             color: #000;
         }
             .brand span:first-child {
@@ -55,6 +57,12 @@
         .brand strong{
             font-weight: bold;
         }
+
+        .brand .expert{
+            font-weight:100;
+            color: #000
+            
+        }
       
 .location-box{
     position: relative;
@@ -66,9 +74,19 @@
         font-size: 16px;
     }
     
+    .grey{
+        color: #9D9D9F;
+    }
+    
         .location-box a{
             font-size: 16px;
             display: block;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .location-box a:hover{
+            color:  #24A3D8;
         }
 
 .location-box::before{
@@ -108,20 +126,42 @@
         border: none;
     }
 
+    .button.home{
+        color: #24A3D8;
+    }
+
     .button:hover{
         background: #323946;
-        color: #fff;
+        color: #24A3D8;
+     
     }
+    
+    .button span:first-of-type{
+        font-weight: bold;
+    }
+
+   .is-small:hover{
+            transform: rotate(-180deg);
+        } 
 
     .dropdown{
         vertical-align: middle;
         padding-top: 10px;
     }
 
+
+    .fa-angle-down{
+        color: #24A3D8;
+    }
+
+    .fa-angle-down:hover{
+        transform: rotate(180deg);
+    }
+
     .dropdown-menu{
         top: 108%;
     }   
-        .is-5{
+        .is-6{
             text-align: right;
         }
            .fa-search{
