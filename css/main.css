@@ -38,39 +38,6 @@ a{
 }
 
 
-.tabs{
-    display: block;
-    width: 100%;
-}
-
-.tabs-nav{
-    display: flex;
-    width: 100%;
-}
-
-.tabs-nav li{
-    flex: 1;
-}
-.tabs-nav a{
-    display: block;
-}
-.tabs-nav a.active,
-.tabs-nav a:hover{
-    background: blue;
-}
-
-.tabs-content{
-    display: block;
-}
-.tabs-content .tab{
-    display: none;
-}
-.tabs-content .tab.active{
-    display: block;
-}
-
-
-
 /*.row{
     display: flex;
     flex-direction: row;

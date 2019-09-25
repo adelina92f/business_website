@@ -28,7 +28,7 @@ $('.owl-two').owlCarousel({
     margin:10,
     nav:false,
     autoplay:true,
-    autoplayTimeout:2700,
+    autoplayTimeout:3000,
     autoplayHoverPause:false,
     responsive:{
         0:{

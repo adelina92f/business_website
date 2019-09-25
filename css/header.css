@@ -4,7 +4,7 @@
     .top-header{
         background: #F2F2F5;
         padding: 15px 0px;
-        width: 100%;;
+        width: 100%;
     }
         .page-header p{
             line-height: 20px;
@@ -19,21 +19,29 @@
 
             .social-links a{
                 text-decoration: none;
-                color: #D3D3D3; 
                 margin: 0 0 0 5px;
                 display: inline-block;
                 vertical-align: top;
+                border-radius: 50%;
+                background: #d9d9d9;
             }
 
-        .fa-facebook:hover,
-        .fa-twitter-square:hover,
-        .fa-google-plus:hover
-        {
-            color:#ffff;
+        .fa-facebook-f,
+        .fa-twitter,
+        .fa-google-plus-g{
+            border-radius: 50%;
+            background: #d9d9d9;
+            color:#333;
+            font-size: 14px;
+            width: 25px;
+            text-align: center;
+            font-weight: 400;
+            height: 100%;
+
         } 
             
 .middle-header{
-    padding: 25px 0px;;
+    padding: 25px 0px;
 }
 
     .brand{
@@ -60,8 +68,7 @@
 
         .brand .expert{
             font-weight:100;
-            color: #000
-            
+            color: #000;  
         }
       
 .location-box{
@@ -115,12 +122,13 @@
         .bold{
             font-weight: bold;
         }
+
 .navigation{
     background: #323946;
     color: #ffffff;
 }
 
-    .button{
+.button{
         color: #fff;
         background: #323946;
         border: none;
@@ -130,38 +138,51 @@
         color: #24A3D8;
     }
 
+    .dropdown:hover .button,
+    .dropdown-menu:hover .button,
     .button:hover{
         background: #323946;
         color: #24A3D8;
-     
     }
     
     .button span:first-of-type{
         font-weight: bold;
     }
+    
+    .is-small{
+        transition: all 1s;
+    }
 
-   .is-small:hover{
-            transform: rotate(-180deg);
-        } 
+    .dropdown:hover .is-small,
+    .dropdown-menu:hover .is-small{  
+        transform: rotate(180deg);
+    } 
 
     .dropdown{
         vertical-align: middle;
         padding-top: 10px;
+        /*padding-left: 0;*/
     }
-
 
     .fa-angle-down{
         color: #24A3D8;
     }
 
-    .fa-angle-down:hover{
+    /*.fa-angle-down:hover{
         transform: rotate(180deg);
+    }*/
+
+    /*.dropdown-menu{
+       
+        top: 108%;
+        left: -20px;
+    }  */
+    
+    .middle-header .container .is-5{
+        text-align: left;
     }
 
-    .dropdown-menu{
-        top: 108%;
-    }   
-        .is-6{
+        .is-5{
             text-align: right;
         }
            .fa-search{
