@@ -620,11 +620,27 @@ justify-content: space-around;
     color: #000;
 }
 
-.swiper-button-prev, 
-.swiper-container-rtl 
-.swiper-button-next {
-    background: none;
-    content: "\f054";  
-    font-family: FontAwesome;
-    color: #000; 
+.swiper-button-prev,
+.swiper-button-next{
+    background-image: none;
+    background-color: red;
+    color: #fff;
+}
+
+.swiper-button-prev{
+
+}
+
+.swiper-button-prev::before{
+    font-family: "Font Awesome 5 Pro";
+    content: "\f054";
+    font-weight: bold;
+}
+
+.swiper-button-next{}
+
+.swiper-button-next::before{
+    font-family: "Font Awesome 5 Pro";
+    content: "\f054";
+    font-weight: bold;
 }
