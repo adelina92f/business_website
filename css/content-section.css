@@ -1,5 +1,5 @@
 .service{
-    padding: 70px 0 70px 0;
+    padding: 60px 0 65px 0;
  }
  
     .service h1{
@@ -20,8 +20,12 @@
         }
 
         .box-service p{
-            color: #BDBDBD;
-            font-size: 16px;
+            color: #666;
+            font-size: 14px;
+            font-weight: 300;
+            width: 80%;
+            margin: auto;
+            line-height: 1.5;
         }
 
          .service img{
@@ -158,6 +162,7 @@
 
 .about-us .column:first-of-type{
     padding: 0 40px;
+    padding-right: 100px;
 }
 
     .about-us h1{
@@ -280,8 +285,8 @@
             }
 
             .rol-number div:last-of-type{
-                font-weight: 100;
-                color: #A4A4A4;
+                font-weight: 300;
+
             }
 
     .right-info h2{
@@ -292,12 +297,11 @@
     }
 
     .right-info p{
-        color: #A4A4A4;
         text-align: justify;
         margin-bottom: 50px;
-        line-height: 1.5;
         width: 80%;
-        font-weight: 100;
+        font-weight: 300;
+        line-height: 1.7;
     }
 
     .read-more{
@@ -419,6 +423,10 @@ figure::before{
                 padding-bottom: 20px;
             }
 
+            .form-field label{
+                font-weight: 300;
+            }
+
                 .form-label{
                     padding-top: 20px;
                 }
@@ -488,20 +496,28 @@ figure::before{
         }
 
     .holder-opinion{
-        border: 1px solid #F2F2F2;
+        /*border: 1px solid #F2F2F2;*/
+        border: 1px solid #ebebeb;
+        box-shadow:0 0 6px 3px rgba(174,174,174,.05);
         padding: 25px 15px 15px 15px;
         border-radius: 7px;
     }
 
         .holder-opinion p{
             text-align: center;
-            color: #A1A1A1;
-            margin-bottom: 15px;
+            font-weight: 300;
+            line-height: 1.4;
+            width: 90%;
+            margin: auto; 
+            margin-bottom: 25px;
+            font-style: italic;
         }
 
         .holder-opinion h3{
+            font-size: 16px;
             text-align: center;
             margin-bottom: 15px;
+            font-weight: bold;
         }
 
     	    .image{
@@ -586,12 +602,11 @@ figure::before{
             }
 
 .info-about-us{
-    font-size: 16px;
-    font-weight: 100;
-    color: #A4A4A4;
+    font-size: 14px;
+    font-weight: 300;
     text-align: justify;
-    line-height: 22px;
     margin-bottom: 30px;
+    line-height: 1.5;
 }
 
 .tabs-content{
@@ -611,36 +626,41 @@ display: flex;
 justify-content: space-around;
 }
 
-.swiper-button-next, 
-.swiper-container-rtl 
-.swiper-button-prev {
-    background: none;
-    content: "\f054";  
-    font-family: FontAwesome;
-    color: #000;
-}
-
 .swiper-button-prev,
 .swiper-button-next{
     background-image: none;
-    background-color: red;
+    background: rgba(99,117,149,.39);
     color: #fff;
 }
 
 .swiper-button-prev{
-
+    left: 0;
+    width: 45px;
+    height: 45px;
 }
 
 .swiper-button-prev::before{
     font-family: "Font Awesome 5 Pro";
-    content: "\f054";
-    font-weight: bold;
+    content: "\f053";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    display: block;
+    text-align: center;
 }
 
-.swiper-button-next{}
+.swiper-button-next{
+    right: 0;
+    width: 45px;
+    height: 45px;
+}
 
 .swiper-button-next::before{
     font-family: "Font Awesome 5 Pro";
     content: "\f054";
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    display: block;
+    text-align: center;
 }

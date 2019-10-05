@@ -7,9 +7,10 @@ $(function(){
 function initHeroSlider(){
   var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30,
-    centeredSlides: true,
+    centeredSlides: true, 
+    loop:true,
     autoplay: {
-      delay: 4500,
+      delay: 4500, 
       disableOnInteraction: false,
     },
     pagination: {

@@ -1,13 +1,21 @@
 footer{
     background: #323946;
     color:#fff;
-    padding-top: 40px;
+    padding-top: 70px;
 }
+
+    .footer-container .columns{
+        margin-bottom: 50px;
+    }
 
     .footer-box{
         margin-top: 0px;
+        width: 78%;
     }
 
+    .last-box{
+        width: 100%;
+    }
         .footer-box .logo{
             float: none;
             margin-bottom: 30px;
@@ -20,6 +28,12 @@ footer{
             padding-bottom: 20px;
             border-bottom: 0.5px solid #616873;
             margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 23px;
+        }
+
+        .last-box h3{
+            width: 65%;
         }
 
         .footer-box p{
@@ -56,6 +70,16 @@ footer{
             display: block;
             margin-bottom: 22px;
             font-size: 15px;
+        }
+
+        .phone,
+        .adress{
+            font-weight: 900;
+        }
+
+        .location-span{
+             display: block;
+             margin-left: 33px;
         }
 
         .footer-box > .brand{
