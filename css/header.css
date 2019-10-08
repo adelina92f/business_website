@@ -138,7 +138,17 @@
         color: #fff;
         background: #323946;
         border: none;
-    }
+}
+
+button.button span a{
+    color: #fff;
+    background: #323946;
+    border: none;
+}
+
+button.button span a:hover{
+    color: #24A3D8;
+}
 
     .button.home{
         color: #24A3D8;
