@@ -4,7 +4,7 @@
 
 .img-head{
    background-image: url(../images/bg-image-1.jpg);
-   padding: 80px 0px 65px 0;
+   padding: 60px 0px 0 0;
    background-size: cover;
    background-repeat: no-repeat;
    height: 203px;
@@ -22,6 +22,7 @@
         font-size: 46px;
         font-weight: bold;
         position: relative;
+        padding-bottom: 15px;
     }
     h1 span::before{
         content: '';
@@ -30,9 +31,9 @@
         left: 0;
         right: 0;
         top: 100%;
-        padding-bottom: 15px;
         margin: auto;
         border-bottom: 4px solid #fff;
+        bottom: 0;
     }
 
     ul li{
@@ -89,7 +90,7 @@
     .post-heading h3 a{
         text-decoration: none;
         color: #000;
-        font-weight: bold;
+        font-weight: 900;
     }
 
     .post-heading h3 a:hover{
@@ -108,7 +109,7 @@
     }
 
     .text-bold{
-        font-weight: bold;
+        font-weight: 500;
     }
 
     .post-meta{
@@ -177,7 +178,7 @@
     
     h4{
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         margin-bottom: 12px;
     }
 
@@ -193,7 +194,7 @@
 
     .categories li a{
         color: #bab8b8;
-        font-weight: bold;
+        font-weight: 500;
     }
 
     
@@ -239,11 +240,12 @@
     }
 
     .part-two a{
-        font-weight: bold;
+        font-weight: 500;
+        color: #000;
     }
 
     .part-two p{
-        margin-top: 16px;
+        margin-top: 12px;
         font-size: 12px;
         font-weight: 300;
         white-space: nowrap;
@@ -265,6 +267,7 @@
     .banner p{
         margin-bottom: 29px;
         line-height: 2;
+        font-weight: 300;
     }
 
     .banner a{
@@ -293,11 +296,12 @@
 
     .tags li a{
         color: #666;
+        font-weight: 300;
     }
 
     .tags li:hover{
-        background:#D8D8D8;
-        color: #666;
+        background:#e8e8e8;
+        color: #000;
     }
 
     .tags li a:hover{

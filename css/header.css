@@ -8,7 +8,8 @@
     }
         .page-header p{
             line-height: 24px;
-            color: #A0A0A1;
+            color: #666;
+            font-weight: 300;
         }
         .social-links{
             font-size: 20px;
@@ -126,7 +127,7 @@
         background-image: url(../images/icon-phone-28x29.png);
     }
         .bold{
-            font-weight: bold;
+            font-weight: 700;
         }
 
 .navigation{

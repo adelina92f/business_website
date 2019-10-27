@@ -7,7 +7,7 @@
     }
 
     .box-service{
-        position: relative;
+        /*position: relative;*/
         text-align: center;
         width: 100%;
     }
@@ -28,14 +28,22 @@
             line-height: 1.5;
         }
 
-         .service img{
-            padding: 60px;
+        .service img{
+            padding: 15px;
         }
 
         .service .fas{
             color: #44BEF1;
             font-size: 35px;
-            padding: 60px;
+            padding: 15px;
+        }
+
+        .icon-decoration-border{
+            position: relative;
+            height: 80px;
+            width: 90px;
+            margin: auto;
+            margin-bottom: 50px;
         }
 
         .icon-decoration-border:before,
@@ -51,26 +59,26 @@
         }
 
         .icon-decoration-border:before{
-            top: 43px;
-            left: 80px;
+            top: 0%;
+            left:0%;
         }
 
         .icon-decoration-border-inner:before{
             transform: rotate(270deg);
-            top: 104px;
-            left: 80px;
+            top: 80%;
+            left: 0%;
         }
 
         .icon-decoration-border:after{
             transform: rotate(90deg);
-            top: 43px;
-            left: 150px;
+            top: 0%;
+            left: 83%;
         }
 
         .icon-decoration-border-inner:after{
             transform: rotate(180deg);
-            top: 104px;
-            left: 150px;
+            top: 80%;
+            left: 83%;
         }
 
         .service .columns .column:hover{
@@ -83,24 +91,28 @@
             margin: 0 15px;
         }
 
+        .icon-decoration-border-inner{
+            padding-top: 8px;
+        }
+
         .box-service:hover .icon-decoration-border:before{
-            top: 48px;
-            left: 85px;
+            top:15%;
+            left:15%;
         }
 
         .box-service:hover .icon-decoration-border-inner:before{
-            top: 95px;
-            left: 85px;
+            top: 70%;
+            left: 15%;
         }
 
         .box-service:hover .icon-decoration-border:after{
-            top: 48px;
-            left: 145px;
+            top: 15%;
+            left:68%;
         }
 
         .box-service:hover .icon-decoration-border-inner:after{
-            top: 95px;
-            left: 145px;
+            top: 70%;
+            left: 70%;
         }
 
 .what-we-do{   
@@ -108,16 +120,18 @@
     padding: 80px 0px 65px 0;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 220px;
+    /*height: 220px;*/
 }
 
     .container-what-we-do{
         color: #ffffff;
+        max-width: 100%;
     }
 
     .element{
         vertical-align: middle;
         height: 100%;
+        position: relative;
     }
 
         .title{
@@ -127,17 +141,44 @@
             vertical-align: middle;
         }
 
+        @media only screen and (max-width: 991px) {
+            .title{
+                display: block;
+                text-align: center;
+            }
+         }
+
         .line{
             font-size: 36px;
-            margin: 0 15px;
             vertical-align: middle;
+            
+            transition: .5s all ease;
         }
+
+        @media only screen and (max-width: 991px) {
+            .line{
+                position: absolute;
+                transform: rotate(90deg);
+                display: block;
+                text-align: center; 
+                top: 35%;
+                left: 50%;
+            } 
+         }
 
         .information-span{
             margin-right:25px;
             vertical-align: middle;
             font-size: 20px;
         }
+
+        @media only screen and (max-width: 991px) {
+            .information-span{
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+         }
 
         .element .btn-blue{
             vertical-align: middle;
@@ -148,6 +189,14 @@
             font-size: 16px;
             margin-right: 0px;
         }
+
+        @media only screen and (max-width: 991px) {
+            .element .btn-blue{
+                position: absolute;
+                left: 40%;
+                width: 18%;
+            }
+         }
         
 .about-us{
     text-align: center;
@@ -156,14 +205,38 @@
     margin-bottom: 90px;
 }
 
+@media only screen and (max-width: 991px) {
+    .about-us .container .columns{
+        flex-direction: column-reverse;
+    }
+ }
+
+ 
+
 .about-us .column{
     width: 50%;
 }
+
+@media only screen and (max-width: 991px) {
+    .about-us .column {
+        width: 54%;
+        margin: auto;
+    }
+ }
+
+
+
 
 .about-us .column:first-of-type{
     padding: 0 40px;
     padding-right: 100px;
 }
+
+ @media only screen and (max-width: 991px) {
+    .about-us .column:first-of-type{
+        padding: 40px 12px 40px 12px;
+    }
+ }
 
     .about-us h1{
        
@@ -304,6 +377,12 @@
         line-height: 1.7;
     }
 
+    @media only screen and (max-width: 991px) {
+        .right-info p{
+            width: 100%;
+        }
+     }
+
     .read-more{
         border: 1px solid #60B8DE;
         padding: 12px 30px;
@@ -374,6 +453,12 @@ figure::before{
         width: 100%;
     }
 
+    @media only screen and (max-width: 991px) {
+        figure img{
+            width: 70%;
+        }
+     }
+
     figure{
         position: relative;
         z-index: 0;
@@ -412,7 +497,16 @@ figure::before{
         .calculator h1{
             font-size: 45px;
             margin-bottom: 40px;
+            font-weight: bold;
         }
+
+        @media only screen and (max-width: 991px) {
+            .box-calculator{
+                width: 70%;
+                margin: auto;
+                font-weight: bold;
+            }
+         }
 
         .calculator .border-bottom{
             margin: 0;
@@ -460,6 +554,13 @@ figure::before{
     .calculator .container{
         display: flex;
     }
+
+    @media only screen and (max-width: 991px) {
+        .calculator .container {  
+            flex-direction: column-reverse;
+            display: block;
+        }
+     }
 
 .testimonials{
     margin-bottom: 30px;
