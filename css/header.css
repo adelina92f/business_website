@@ -31,7 +31,7 @@
                 background: #d9d9d9;
                 color:#333;
                 width: 27px;
-                height: 24px;
+                height: 27px;
                 line-height: 27px;
             }
 
@@ -43,8 +43,14 @@
             display: block;
             text-align: center;
             line-height: 27px;
-
         } 
+
+        .fa-facebook-f::before,
+        .fa-twitter::before,
+        .fa-google-plus-g::before{
+            vertical-align: middle;
+            line-height: 27px;
+        }
             
 .middle-header{
     padding: 25px 0px;

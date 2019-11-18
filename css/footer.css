@@ -5,7 +5,7 @@ footer{
 }
 
     .footer-container .columns{
-        margin-bottom: 50px;
+        margin-bottom:50px;
     }
 
     .footer-box{
@@ -16,6 +16,26 @@ footer{
     .last-box{
         width: 100%;
     }
+
+    .last-box h3{
+        width: 65%;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .footer-box{
+            /*width: 40%;*/
+            margin: auto; 
+        }
+
+        .last-box{
+           /* width: 40%;*/
+           width: 80%;
+            margin: auto; 
+        }
+
+     }
+
+    
         .footer-box .logo{
             float: none;
             margin-bottom: 30px;
@@ -32,13 +52,16 @@ footer{
             font-size: 23px;
         }
 
-        .last-box h3{
-            width: 65%;
-        }
-
         .footer-box p{
             margin-bottom: 15px;
         }
+
+        @media only screen and (max-width: 767px) {
+            .footer-box h3{
+                margin: auto; 
+                margin-bottom: 15px;
+            }
+         }    
 
         .footer-box button{
             padding: 17px;

@@ -24,6 +24,21 @@
     width: 30%;
 }
 
+@media only screen and (max-width: 476px) {
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+ }
+
+ @media only screen and (max-width: 767px) {
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 80%;
+    }
+ }
+
 /*.owl-next{
     position: absolute;
     top: 40%;

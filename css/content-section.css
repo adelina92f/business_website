@@ -10,7 +10,16 @@
         /*position: relative;*/
         text-align: center;
         width: 100%;
+        margin-bottom: 30px;
     }
+
+    @media only screen and (max-width: 767px) {
+        .box-service{
+            width: 60%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+     }
  
         .box-service h2{
             text-align: center;
@@ -87,9 +96,30 @@
             border-radius: 4px;
         }
 
+        /*@media only screen and (max-width: 991px) {
+            .service .columns{
+                display: inline-block;
+            }
+         }
+
+         @media only screen and (max-width: 991px) {
+            .service .columns .column{
+                display: inline-block;
+                width: 45%;
+            }
+         }
+        
+         @media only screen and (max-width: 767px) {
+            .service .columns .column{
+                display:block;
+                margin: auto;
+            }
+         }
+
+
         .service .columns .column{
             margin: 0 15px;
-        }
+        }*/
 
         .icon-decoration-border-inner{
             padding-top: 8px;
@@ -129,9 +159,7 @@
     }
 
     .element{
-        vertical-align: middle;
-        height: 100%;
-        position: relative;
+        text-align: center;
     }
 
         .title{
@@ -139,12 +167,18 @@
             font-size: 45px;
             color:#fff;
             vertical-align: middle;
+            margin-bottom: 0px;
+        }
+
+        .what-we-do .container .title{
+            margin-bottom: 0;
         }
 
         @media only screen and (max-width: 991px) {
             .title{
                 display: block;
                 text-align: center;
+                font-size: 34px;
             }
          }
 
@@ -157,7 +191,7 @@
 
         @media only screen and (max-width: 991px) {
             .line{
-                position: absolute;
+                /*position: absolute;*/
                 transform: rotate(90deg);
                 display: block;
                 text-align: center; 
@@ -176,27 +210,18 @@
             .information-span{
                 display: block;
                 text-align: center;
-                margin-bottom: 10px;
+                margin-bottom: 45px;
             }
          }
 
         .element .btn-blue{
             vertical-align: middle;
             border-radius: 5px;
-            width: 100%;
             background: #24a3d8;
             border: 2px solid#24a3d8;
             font-size: 16px;
             margin-right: 0px;
         }
-
-        @media only screen and (max-width: 991px) {
-            .element .btn-blue{
-                position: absolute;
-                left: 40%;
-                width: 18%;
-            }
-         }
         
 .about-us{
     text-align: center;
@@ -224,8 +249,12 @@
     }
  }
 
-
-
+ 
+@media only screen and (max-width: 767px) {
+    .about-us .column {
+        width: 90%;
+    }
+ }
 
 .about-us .column:first-of-type{
     padding: 0 40px;
@@ -234,7 +263,7 @@
 
  @media only screen and (max-width: 991px) {
     .about-us .column:first-of-type{
-        padding: 40px 12px 40px 12px;
+        padding: 40px 0px 40px 0px;
     }
  }
 
@@ -343,6 +372,19 @@
             padding-right: 40px;
         }
 
+        .rol-number:last-of-type{
+            padding-right: 0px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .rol-number{
+                border-right: none;
+                border-bottom: 0.5px solid #e1e1e1;
+                padding-bottom: 20px;
+                margin-top: 15px;
+            }
+         }
+    
         .rol-number:last-child{
             border-right: none;
         }
@@ -356,6 +398,12 @@
                 color: #8ACBE6; 
                 font-weight: bold;
             }
+
+            @media only screen and (max-width: 767px) {
+                .rol-number > .blue-number{
+                    font-size: 60px; 
+                }
+             }
 
             .rol-number div:last-of-type{
                 font-weight: 300;
@@ -380,6 +428,12 @@
     @media only screen and (max-width: 991px) {
         .right-info p{
             width: 100%;
+        }
+     }
+
+     @media only screen and (max-width: 767px) {
+        .right-info p{
+            width: 90%;
         }
      }
 
@@ -459,6 +513,12 @@ figure::before{
         }
      }
 
+     @media only screen and (max-width: 767px) {
+        figure img{
+            display: none;
+        }
+     }
+
     figure{
         position: relative;
         z-index: 0;
@@ -507,6 +567,13 @@ figure::before{
                 font-weight: bold;
             }
          }
+
+         @media only screen and (max-width: 767px) {
+            .box-calculator{
+                width: 100%;
+            }
+         }
+
 
         .calculator .border-bottom{
             margin: 0;
@@ -624,6 +691,7 @@ figure::before{
     	    .image{
                 text-align: center;
                 margin-bottom: 15px;
+                position: relative;  
             }
 
             .image image{
@@ -639,20 +707,20 @@ figure::before{
             .image::before,
             .image::after{
                 content: ' ';
-                width: 50px;
+                width: 15%;
                 border-bottom: 2px solid #EBEBEB;
                 display: inline-block;
-                position: relative;  
+                position: absolute;  
             }
 
             .image::before{ 
-                left: -80px;
-                top: 45px;
+                left: 15%;
+                top: 50%;
             }
 
             .image::after{
-                top: -50px;
-                left: 80px;
+                top: 50%;
+                left: 70%;
             }
 
 .logos{
@@ -676,6 +744,16 @@ figure::before{
         width: 100%;
         margin-bottom: 20px;
     }
+
+    @media only screen and (max-width: 767px) {
+        .tabs-nav{
+            display: block;
+        }
+
+        .tabs ul{
+            display: block;
+        }
+     }
 
         .tabs-nav li{
             flex: 1;
@@ -723,9 +801,15 @@ figure::before{
 }
 
 .rows-info{
-display: flex;
-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
+
+@media only screen and (max-width: 767px) {
+    .rows-info{
+        display: block;
+    }
+ }
 
 .swiper-button-prev,
 .swiper-button-next{
@@ -765,3 +849,10 @@ justify-content: space-around;
     display: block;
     text-align: center;
 }
+
+@media only screen and (max-width: 992px) {
+    .swiper-button-prev,
+    .swiper-button-next{  
+       display: none;
+    }
+ }

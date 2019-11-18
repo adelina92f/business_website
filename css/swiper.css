@@ -41,6 +41,33 @@
     width: 50%;
 }
 
+@media only screen and (max-width: 388px) {
+    .description.slide-2{  
+       width: 85%;
+       margin: auto;
+    }
+ }
+
+ @media only screen and (max-width: 767px) {
+    .description.slide-2,
+    .description.slider-1{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        line-height: 1.5;
+    }
+ }
+
+ @media only screen and (max-width: 992px) {
+    .description.slide-2,
+    .description.slider-1{
+        width: 60%;
+        line-height: 1.5;
+        margin-left: 50px;
+    }
+ }
+
+
 @media only screen and (max-width: 1100px) {
     .description{
         position: absolute;
@@ -50,16 +77,37 @@
     }
  }
 
+
+
 .description h1{
     font-size: 52px;
     font-weight: bold;
     margin-bottom: 15px;
 }
+
+@media only screen and (max-width: 571px) {
+    .description h1{  
+        font-size: 35px;
+        margin: auto;
+        text-align: center;
+    }
+ }
+
 .description p{
     font-size: 24px;
     margin-bottom: 50px;
     font-weight: 100;
 }
+
+@media only screen and (max-width: 571px) {
+    .description p{  
+        font-size: 16px;
+        text-align: center;
+        margin: 25px 0px;
+        line-height: 1.5;
+    }
+ }
+
 .description.slide-2{
     color: #ffffff;
 }
@@ -70,47 +118,69 @@
     margin-right: 20px;
     border-radius: 9px;
 }
+
+@media only screen and (max-width: 571px) {
+    .btn{  
+        display: block;
+        width: 55%;
+        margin: auto;
+    }
+ }
+
 .btn-blue{
     border: 2px solid#44BEF1;
     background: #44BEF1;
     color: #ffffff;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 571px) {
+    .btn-blue{  
+        margin-bottom: 15px;
+    }
+ }
+
 .btn-blue:hover{
     border: 2px solid #ffffff;
     background: #fff;
     color: #44BEF1;
 }
+
 .btn-white{
     border: 2px solid#fff;
     background: #fff;
     color: #44BEF1;
     font-weight: bold;
-    
 }
+
 .btn-white{
     border: 2px solid #ffffff;
     background: transparent;
     color: #fff;
 }
+
 .btn-white:hover{
     border: 2px solid #ffffff;
     background: #fff;
     color:#44BEF1;
 }
+
 .slider-1 h1{
     margin-bottom: 50px;
 }
+
 .btn-grey{
     background: transparent;
     border: 2px solid gray;
     color: #000;
 }
+
 .btn-grey:hover{
     background: #44BEF1;
     border: 2px solid #44BEF1;
     color: #fff;
 }
+
 /*.swiper-button-prev,
 .swiper-container-rtl 
 .swiper-button-next{

@@ -33,6 +33,20 @@ a{
     margin: auto;
 }
 
+@media only screen and (max-width:991px) {
+    .container{
+       max-width: 750px;
+    }
+ }  
+
+ @media only screen and (max-width: 767px) {
+    .container{
+        min-width: 300px;
+        max-width: 480px;
+    }
+ }
+
+
 .swiper-container{
     position: relative;
     height: 100%;

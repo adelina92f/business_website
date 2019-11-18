@@ -14,10 +14,10 @@ $('.owl-one').owlCarousel({
         0:{
             items:1
         },
-        600:{
-            items:3
+        767:{
+            items:2
         },
-        1000:{
+        991:{
             items:3
         }
     }
@@ -34,10 +34,13 @@ $('.owl-two').owlCarousel({
         0:{
             items:1
         },
-        600:{
-            items:3
+        476:{
+            items:2
         },
-        1000:{
+        767:{
+            items:4
+        },
+        991:{
             items:6
         }
     }
