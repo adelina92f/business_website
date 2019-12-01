@@ -257,6 +257,8 @@ button.button span a:hover{
         .button span:first-of-type{
             color: #24A3D8;
             background: #fff;
+            width:210px;
+           padding-right: 72%;
         }
 
         button.button span a {
@@ -268,9 +270,24 @@ button.button span a:hover{
             background: #fff;
         }
 
-        .button:hover{
-            background: #24A3D8;
+        /*.button:hover,
+        .dropdown-trigger .button span:hover,
+        .dropdown a:hover{
+            background: #24A3D8; 
+            color: #fff;
+           
+        }*/
+
+        .dropdown:hover .button,
+        .dropdown span:hover,
+        .button:hover .fa-angle-down,
+        .button:hover a:hover{
+            background:#24A3D8 ;
+            color: #fff; 
+            border: none;
+            text-decoration: none;
         }
+
     }
 
     .is-small{
@@ -279,9 +296,9 @@ button.button span a:hover{
 
     @media only screen and (max-width: 1024px) {
         .middle-header{
-            padding-top: 50px;
+            /*padding-top: 30px;*/
             width: 100%;
-            height: 200px;
+            height: 130px;
         }
 
         .middle-header .is-5{
@@ -349,7 +366,14 @@ button.button span a:hover{
             .dropdown-menu .dropdown-content{
                 display: none;
             }
-         }
+
+            .dropdown:hover .is-small,
+            .dropdown-menu:hover .is-small,
+            .fa-angle-down::before:hover{  
+                color: #fff;
+
+            } 
+        }
 
            
 
