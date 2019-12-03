@@ -598,13 +598,21 @@ figure::before{
                     width: 100%;
                 }
 
-                input{
+                input{        
                     background: #F4F7F9;
                     border: none;
-                    width: 75%;
+                    width: 100%;
                     padding: 10px;
                     border-radius: 5px 0 0 5px;
+                    
                 }
+
+                
+        @media only screen and (max-width: 1024px) {
+            input{
+                background: #fff;
+            }
+        }
 
                 .last-form-fild{
                     margin-top: 38px;

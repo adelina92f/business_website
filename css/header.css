@@ -15,7 +15,7 @@
         .top-holder{
             position: absolute;
             left: -100%;
-            top: 100%;
+            top: 49px;
             z-index:15;
             width: 80%;
             /*max-width: 800px;*/
@@ -24,9 +24,12 @@
         }
         .top-holder.active{
             left: 0;
-            top: 58px;
+            top: 49px;
             background: #fff;
             width: 100%;
+            display:flex;
+            flex-flow: column;
+            border: 2px solid #F2F2F5;
         }
 
         .page-header .is-9 {
@@ -39,6 +42,16 @@
         background: #F2F2F5;
         padding: 15px 0px;
         width: 100%;
+    }
+
+    @media only screen and (max-width: 1024px) {    
+        .middle-header{
+            order: 1;
+        }
+       
+        .top-header{
+            order: 2;
+        }
     }
 
         .page-header p{
@@ -54,11 +67,11 @@
         }
         
         @media only screen and (max-width: 1024px) {    
-        .social-links{
-            float: none;
-            text-align: center;
+            .social-links{
+                float: none;
+                text-align: center;
             
-        }
+            }
         }
 
         .social-links ul li{
@@ -211,14 +224,49 @@
         width: 270px;
         /*max-width: 800px;*/
         transition: left .3s ease-in;
-        top: 58px;
+        top: 49px;
         background: #fff;
     }
 
     .navigation.open{
         left: 0;
+        top: 49px;
         
     }
+
+    .navigation .columns{
+        display:flex;
+        flex-flow: column;
+    }
+
+    .position_1{
+        order: 1;
+    }
+
+    .position_2{
+        order: 2;
+    }
+
+    .position_3{
+        order: 3;
+    }
+
+    .position_4{
+        order: 4;
+    }
+
+    .position_5{
+        order: 5;
+    }
+
+    .position_6{
+        order: 6;
+    }
+
+    .position_7{
+        order: 7;
+    }
+
  }
 
 .button{
@@ -349,14 +397,14 @@ button.button span a:hover{
 
             .navigation form{
                 display: block;
-                padding: 5px 0px 5px 0px;
+                padding:0px;
                 position: relative;
                 width: 270px;
             }
 
             .navigation .fa-search{
                 position: absolute;
-                top: 83%;
+                top: -1%;
                 left: 73%;
                 color: #000;
                 text-align: 50%;
@@ -373,8 +421,21 @@ button.button span a:hover{
                 color: #fff;
 
             } 
+            
+            .toggle-menu_1 .hamburger-inner, 
+            .toggle-menu_1 .hamburger-inner::before,
+            .toggle-menu_1 .hamburger-inner::after {
+                 width: 7px;
+                height: 7px;
+            }
+
+            .hamburger-box {
+                 width: 15px;
+                height: 15px;
+            }
         }
 
+        
            
 
 
