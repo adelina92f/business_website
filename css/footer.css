@@ -76,6 +76,7 @@ footer{
         
         footer input{
             padding: 17px;
+            width: 70%;
         }
 
             .footer-box .fab{
@@ -152,4 +153,10 @@ footer{
         color: #fff;
         padding: 20px;
         text-align: center;
+    }
+
+    @media only screen and (max-width: 800px) {
+       .footer-container{
+           margin-left: 40px;
+       }
     }

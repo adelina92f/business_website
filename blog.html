@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./css/bulma.css" />
     <link rel="stylesheet" type="text/css" href="./css/header.css" />
     <link rel="stylesheet" type="text/css" href="./css/content-section.css" />
+    <link rel="stylesheet" type="text/css" href="./css/hamburgers.css">
     <link rel="stylesheet" type="text/css" href="./css/footer.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link rel="stylesheet" type="text/css" href="./css/blog.css" />
@@ -20,84 +21,103 @@
 <body>
     <div class="wrapper">
         <header class="page-header">
-            <div class="top-header">
-                <div class="container">
-                    <div class="columns is-gapless">
-                        <div class="column is-9">
-                            <p>Welcome to FinExpert, your expert in managing your finances!</p>
+            <div class="top-header-nav">
+                <div id="Menu_1" class="top-holder main-nav responsive-nav">
+                    <div class="top-header">
+                        <div class="container">
+                            <div class="columns is-gapless">
+                                <div class="column is-9">
+                                    <p>Welcome to FinExpert, your expert in managing your finances!</p>
+                                </div>
+                                <div class="column">
+                                    <div class="social-links">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="column">
-                            <div class="social-links">
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-google-plus-g"></i>
-                                </a>
+                    </div>
+                    <div class="middle-header">
+                        <div class="container">
+                            <div class="columns is-gapless">
+                                <div class="column is-5">
+                                    <a href="#" class="brand">
+                                        [
+                                        <span class="fin">
+                                            <strong>Fin</strong>
+                                        </span>
+                                        <span class="expert">Expert</span>
+                                        ]
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <div class="columns is-gapless is-multiline">
+                                        <div class="column">
+                                            <div class="location-box first-image">
+                                                <div class="location-info">
+                                                    <div class="bold">Mon - Sat: 9:00 - 18:00</div>
+                                                    <div class="grey">Sunday CLOSED</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="location-box second-image">
+                                                <div class="location-info">
+                                                    <a href="#">
+                                                        <div class="bold">267 Park Avenue</div>
+                                                        <div class="grey">New York, NY 90210</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="location-box third-image">
+                                                <div class="location-info">
+                                                    <a href="#">
+                                                        <div class="bold">(123) 45678910</div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div class="grey">info@demolink.org</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="middle-header">
-                <div class="container">
-                    <div class="columns is-gapless">
-                        <div class="column is-5">
-                            <a href="#" class="brand">
-                                [
-                                <span class="fin">
-                                    <strong>Fin</strong>
-                                </span>
-                                <span class="expert">Expert</span>
-                                ]
-                            </a>
-                        </div>
-                        <div class="column">
-                            <div class="columns is-gapless">
-                                <div class="column">
-                                    <div class="location-box first-image">
-                                        <div class="location-info">
-                                            <div class="bold">Mon - Sat: 9:00 - 18:00</div>
-                                            <div class="grey">Sunday CLOSED</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="column">
-                                    <div class="location-box second-image">
-                                        <div class="location-info">
-                                            <a href="#">
-                                                <div class="bold">267 Park Avenue</div>
-                                                <div class="grey">New York, NY 90210</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="location-box third-image">
-                                        <div class="location-info">
-                                            <a href="#">
-                                                <div class="bold">(123) 45678910</div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="grey">info@demolink.org</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="mobile-menu">
+                    <button class="hamburger right-menu hamburger--slider menu-toggle" data-target="#Menu_1" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>
             </div>
             <nav class="nav-bar">
-                <div class="navigation">
+                <div id="Menu_2" class="navigation sub-nav responsive-nav">
                     <div class="container">
-                        <div class="columns is-gapless">
-                            <div class="column">
+                        <div class="columns is-gapless is-desktop is-multiline">
+                            <div class="column is-1-desktop position_2">
                                 <div class="dropdown is-hoverable">
                                     <div class="dropdown-trigger">
                                         <button class="button home" aria-haspopup="true" aria-controls="dropdown-menu4">
@@ -121,11 +141,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column">
+                            <div class="column is-1-desktop position_3">
                                 <div class="dropdown is-hoverable">
                                     <div class="dropdown-trigger">
                                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                                            <span>About Us</span>
+                                            <span>About </span>
                                             <span class="icon is-small">
                                                 <i class="fas fa-angle-down" aria-hidden="true"></i>
                                             </span>
@@ -148,20 +168,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column">
+                            <div class="column is-1-desktop position_4">
                                 <div class="dropdown is-hoverable">
                                     <div class="dropdown-trigger">
                                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                                            <span>Service</span>
+                                            <span class="blue-span">Service</span>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="column">
+                            <div class="column is-1-desktop position_5">
                                 <div class="dropdown is-hoverable">
                                     <div class="dropdown-trigger">
                                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                                            <span>Blog</span>
+                                            <span>
+                                                <a href="blog.html">Blog</a>
+                                            </span>
                                             <span class="icon is-small">
                                                 <i class="fas fa-angle-down" aria-hidden="true"></i>
                                             </span>
@@ -178,7 +200,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column">
+                            <div class="column is-1-desktop position_6">
                                 <div class="dropdown is-hoverable">
                                     <div class="dropdown-trigger">
                                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
@@ -209,20 +231,30 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column is-1">
+                            <div class="column is-1-desktop position_7">
                                 <div class="dropdown is-hoverable">
                                     <div class="dropdown-trigger">
                                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                                            <span>Contacts</span>
+                                            <span class="blue-span">Contacts</span>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="column is-6">
+                            <div class="column is-6 position_1">
+                                <form action="">
+                                    <input type="text" placeholder="Search..">
+                                </form>
                                 <i class="fas fa-search"></i>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="mobile-menu">
+                    <button class="hamburger hamburger--arrow menu-toggle"  data-target="#Menu_2" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>
             </nav>
         </header>
@@ -528,7 +560,7 @@
 <script src="./js/jquery.min.js" type="text/javascript"></script>
 <script src="./js/owl.carousel.js" type="text/javascript"></script>
 <script src="./js/swiper.min.js"></script>
-
+<script src="./js/hamburger.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/owl.js"></script>
 

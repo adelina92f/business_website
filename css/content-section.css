@@ -220,7 +220,6 @@
             background: #24a3d8;
             border: 2px solid#24a3d8;
             font-size: 16px;
-            margin-right: 0px;
         }
         
 .about-us{
@@ -603,7 +602,7 @@ figure::before{
                     border: none;
                     width: 100%;
                     padding: 10px;
-                    border-radius: 5px 0 0 5px;
+                    border-radius: 5px 0 5px 0;
                     
                 }
 

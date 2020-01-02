@@ -11,25 +11,51 @@
         float: right;
     }
 
+    @media only screen and (max-width: 287px) {
+      
+        .responsive-nav.active {
+            width: 100%;
+        }
+     }
+
     @media only screen and (max-width: 1024px) {
-        .top-holder{
+        /*.top-holder{
             position: absolute;
             left: -100%;
             top: 49px;
             z-index:15;
             width: 80%;
-            /*max-width: 800px;*/
+            transition: left .3s ease-in;
+            
+        }*/
+
+        .responsive-nav{
+            position: absolute;
+            left: -100%;
+            top: 49px;
+            z-index:15;
+            /*width: 80%;*/
             transition: left .3s ease-in;
             
         }
-        .top-holder.active{
+
+        .responsive-nav.active{
             left: 0;
             top: 49px;
-            background: #fff;
-            width: 100%;
+           background: #fff;
+            /*width: 35%;*/
             display:flex;
             flex-flow: column;
             border: 2px solid #F2F2F5;
+        }
+
+        #Menu_1.active{
+            width: 100%;
+        }
+
+        #Menu_2 .columns{
+            display: flex;
+            flex-flow: column;
         }
 
         .page-header .is-9 {
@@ -192,6 +218,16 @@
     .third-image::before{
         background-image: url(../images/icon-phone-28x29.png);
     }
+
+   
+    @media only screen and (max-width: 767px) {
+          
+        .third-image{
+            margin-right:108px;
+            margin-top: 24px;
+         }
+    }
+
         .bold{
             font-weight: 700;
         }
@@ -228,7 +264,12 @@
         background: #fff;
     }
 
-    .navigation.open{
+    .navigation .container{
+        min-width: 254px;
+    }
+
+
+    /*.navigation.open{
         left: 0;
         top: 49px;
         
@@ -237,7 +278,7 @@
     .navigation .columns{
         display:flex;
         flex-flow: column;
-    }
+    }*/
 
     .position_1{
         order: 1;
@@ -336,6 +377,18 @@ button.button span a:hover{
             text-decoration: none;
         }
 
+        /*.menu-toggle.active{
+            color: #fff;
+        }*/
+
+        .dropdown:hover span,
+        .dropdown-trigger:hover span,
+        .dropdown-trigger:hover a,
+        .dropdown:hover a{
+            background:#24A3D8;
+            color: #fff; 
+        }
+
     }
 
     .is-small{
@@ -346,7 +399,6 @@ button.button span a:hover{
         .middle-header{
             /*padding-top: 30px;*/
             width: 100%;
-            height: 130px;
         }
 
         .middle-header .is-5{
@@ -399,16 +451,17 @@ button.button span a:hover{
                 display: block;
                 padding:0px;
                 position: relative;
-                width: 270px;
+                width: 267px;
             }
 
             .navigation .fa-search{
                 position: absolute;
-                top: -1%;
-                left: 73%;
+                top: 3%;
+                left: 85%;
                 color: #000;
                 text-align: 50%;
                 z-index: 5;
+                padding: 0;
             }
 
             .dropdown-menu .dropdown-content{
@@ -422,9 +475,9 @@ button.button span a:hover{
 
             } 
             
-            .toggle-menu_1 .hamburger-inner, 
-            .toggle-menu_1 .hamburger-inner::before,
-            .toggle-menu_1 .hamburger-inner::after {
+            .right-menu .hamburger-inner,
+            .right-menu .hamburger-inner::before,
+            .right-menu .hamburger-inner::after {
                  width: 7px;
                 height: 7px;
             }
@@ -433,9 +486,44 @@ button.button span a:hover{
                  width: 15px;
                 height: 15px;
             }
-        }
 
+            .hamburger{
+                outline: none;
+            }
+
+            .second-image{
+                margin-right: 20px;
+            }
+        }
         
+        @media only screen and (max-width: 429px) {
+          
+            .middle-header {
+                height: 265px;
+            }
+
+            .location-info{
+                margin-right:108px;
+            }
+
+             .third-image{
+                margin-right: 0;
+             }
+             .location-box{
+                margin-left: 10%;
+             }
+    
+             .first-image{
+                 margin-bottom: 20px;
+             }
+
+             .first-image .location-info{
+                 margin-right: 82px;
+             }
+
+        }
+    
+       
            
 
 

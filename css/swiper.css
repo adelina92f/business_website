@@ -4,6 +4,18 @@
     height: 100%;
     z-index: 5;
   }
+  @media only screen and (max-width: 425px) {
+    .swiper-container{
+         height: 350px
+        }
+ }
+
+ @media only screen and (max-width: 571px) {
+    .swiper-container{
+         height: 470px
+        }
+ }
+  
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -42,10 +54,25 @@
     width: 50%;
 }
 
+@media only screen and (max-width: 350px) {
+    .description.slide-2,
+    .description.slider-1{
+        width: 88%;
+    }
+
+ }
+
 @media only screen and (max-width: 388px) {
     .description.slide-2{  
        width: 85%;
        margin: auto;
+    }
+ }
+
+ @media only screen and (max-width: 425px) {
+    .description.slide-2,
+    .description.slider-1{
+        width: 83%;
     }
  }
 
@@ -64,7 +91,7 @@
     .description.slider-1{
         width: 60%;
         line-height: 1.5;
-        margin-left: 50px;
+        margin-left: 30px;
     }
  }
 
@@ -78,8 +105,6 @@
     }
  }
 
-
-
 .description h1{
     font-size: 52px;
     font-weight: bold;
@@ -91,6 +116,16 @@
         font-size: 35px;
         margin: auto;
         text-align: center;
+    }
+ }
+
+@media only screen and (max-width: 425px) {
+    .description{
+        top: 10%;
+    }
+
+    .description h1{  
+        font-size: 27px;
     }
  }
 
@@ -125,6 +160,12 @@
         display: block;
         width: 55%;
         margin: auto;
+    }
+ }
+
+ @media only screen and (max-width: 630px) {
+    .btn{  
+        margin-right: 2px;
     }
  }
 
@@ -166,6 +207,14 @@
     color:#44BEF1;
 }
 
+@media only screen and (max-width: 571px) {
+    .btn-blue,
+    .btn-white,
+    .btn-grey{
+        margin-right: 20%;
+    }
+}
+
 .slider-1 h1{
     margin-bottom: 50px;
 }
@@ -181,6 +230,39 @@
     border: 2px solid #44BEF1;
     color: #fff;
 }
+
+@media only screen and (max-width: 425px) {
+    .btn{
+        padding: 8px;
+    }
+
+        .description.slider-1 p{  
+            margin:15px 0 15px 0px;
+        }
+
+        .description.slider-1 h1{  
+            font-size: 27px;
+            margin-bottom: 50px;
+         }
+
+         .description.slider-2 h1{  
+            margin-bottom: 0px;
+         }
+         
+         .slider-buttons .btn-blue,
+    .slider-buttons .btn-white,
+    .slider-buttons .btn-grey{
+        width: 90%;
+    }
+
+ }
+
+ @media only screen and (max-width: 571px) {
+    .description.slide-2,
+    .description.slider-1{
+        width: 70%;
+    }
+ }
 
 /*.swiper-button-prev,
 .swiper-container-rtl 

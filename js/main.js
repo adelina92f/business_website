@@ -9,6 +9,9 @@ function initHeroSlider(){
     spaceBetween: 30,
     centeredSlides: true, 
     loop:true,
+    
+    autoHeight: true,
+  
     autoplay: {
       delay: 4500, 
       disableOnInteraction: false,
