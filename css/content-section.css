@@ -159,11 +159,12 @@
     }
 
     .element{
-        text-align: center;
+       overflow: hidden;
+        
     }
 
         .title{
-            margin-left: 40px;
+            /*margin-left: 40px;*/
             font-size: 45px;
             color:#fff;
             vertical-align: middle;
@@ -201,7 +202,6 @@
          }
 
         .information-span{
-            margin-right:25px;
             vertical-align: middle;
             font-size: 20px;
         }
@@ -222,6 +222,10 @@
             font-size: 16px;
         }
         
+        .element .btn{
+            margin: auto;
+        }
+
 .about-us{
     text-align: center;
     margin-top: 55px;
@@ -863,3 +867,12 @@ figure::before{
        display: none;
     }
  }
+
+ .left-element{
+     float: left;
+ }
+
+ .right-element{
+     float: right;
+ }
+

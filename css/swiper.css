@@ -15,13 +15,6 @@
          height: 470px
         }
  }
-
- @media only screen and (min-width: 1024px) {
-    .swiper-container{
-        margin-top: 50px;
-         width: 100%;
-        }
- }
   
   .swiper-slide {
     text-align: center;
@@ -50,16 +43,20 @@
 
 .description{
     position: absolute;
-    top: 25%;
+    /*top: 25%;
     left: 15%;
     width: 40%;
-    margin-bottom: 30px;
+    margin-bottom: 30px;*/
     text-align: left;
+    width: 100%;
+    height: 100%;
 }
 
-.description.slide-2{
+
+
+/*.description.slide-2{
     width: 50%;
-}
+}*/
 
 @media only screen and (max-width: 350px) {
     .description.slide-2,
@@ -96,21 +93,20 @@
  @media only screen and (max-width: 992px) {
     .description.slide-2,
     .description.slider-1{
-        width: 60%;
+        width: 80%;
         line-height: 1.5;
-        margin-left: 30px;
+        /*margin-left: 30px;*/
     }
+
  }
 
 
-@media only screen and (max-width: 1100px) {
+/*@media only screen and (max-width: 1100px) {
     .description{
         position: absolute;
-        top: 15%;
-        left: 4%;
         width: 60%;
     }
- }
+ }*/
 
 .description h1{
     font-size: 52px;
@@ -127,9 +123,9 @@
  }
 
 @media only screen and (max-width: 425px) {
-    .description{
+    /*.description{
         top: 10%;
-    }
+    }*/
 
     .description h1{  
         font-size: 27px;
@@ -144,7 +140,7 @@
 
 @media only screen and (max-width: 571px) {
     .description p{  
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
         margin: 25px 0px;
         line-height: 1.5;
@@ -155,17 +151,38 @@
     color: #ffffff;
 }
 
+@media only screen and (max-width: 1024px) {
+    .description .container{
+        padding: 90px 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .description{
+        width: 100%;
+    }
+
+    .description .container{
+        padding: 150px 40px;
+    }
+    .description-item{
+        width:51%;
+    }
+}
+
+
 .btn{
     text-decoration: none;
     padding: 15px 25px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     border-radius: 9px;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 571px) {
     .btn{  
         display: block;
-        width: 55%;
+        width:80%;
         margin: auto;
     }
  }
@@ -266,9 +283,24 @@
  @media only screen and (max-width: 571px) {
     .description.slide-2,
     .description.slider-1{
-        width: 70%;
+        width: 80%;
+    }
+
+    .slider-buttons{
+        width: 82%;
+        margin: auto;
     }
  }
+
+
+ @media only screen and (min-width: 571px) {
+   .slider-buttons .btn-blue{
+     margin-right: 15px;
+ }
+ }
+
+
+
 
 /*.swiper-button-prev,
 .swiper-container-rtl 

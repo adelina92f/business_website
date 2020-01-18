@@ -142,6 +142,21 @@
     padding: 25px 0px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .middle-header .container,
+    .navigation .container{
+        padding: 0px;
+    }
+}
+
+
+
+/*@media only screen and (max-width: 1024px) {    
+    .middle-header .container{
+        padding: 0 40px;
+    }
+}*/
+
     .brand{
         font-size: 36px;
         color: #24A3D8;
@@ -175,6 +190,7 @@
     float: right;
 }
     
+
     .location-box > div{
         font-size: 16px;
     }
@@ -240,7 +256,7 @@
 .navigation{
     background: #323946;
     color: #ffffff;
-    position: absolute;
+    /*position: absolute;*/
     width: 100%; 
 }
 
@@ -255,6 +271,7 @@
 
     .navigation{  
         /*position: fixed;*/
+        position: absolute;
         left: -100%;
         top: 100%;
         width: 270px;
@@ -397,7 +414,7 @@ button.button span a:hover{
 
     @media only screen and (max-width: 1024px) {
         .middle-header{
-            /*padding-top: 30px;*/
+            padding-top: 30px;
             width: 100%;
         }
 

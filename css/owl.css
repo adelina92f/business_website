@@ -102,13 +102,13 @@
 .testimonials .owl-prev{
     position: absolute;
     top: 30%;
-    left: -5%;
+    left: -2%;
 }
 
 .testimonials .owl-next{
     position: absolute;
     top: 30%;
-    left: 103%;
+    left: 99%;
 }
 
 .owl-one.owl-carousel .item {

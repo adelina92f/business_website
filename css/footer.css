@@ -54,6 +54,7 @@ footer{
 
         .footer-box p{
             margin-bottom: 15px;
+            float: left;
         }
 
         @media only screen and (max-width: 767px) {
@@ -84,9 +85,9 @@ footer{
                 margin: 3px;
             }
 
-            .fab.fa-facebook{
+            /*.fab.fa-facebook{
                 margin-left: 50px;
-            }
+            }*/
 
         .footer-box a{
             text-decoration: none;
@@ -156,7 +157,20 @@ footer{
     }
 
     @media only screen and (max-width: 800px) {
-       .footer-container{
-           margin-left: 40px;
+       .footer-container .container{
+           padding-left: 40px;
        }
+    }
+
+    .footer-icons{
+        float: right;
+    }
+
+    .footer-icons a{
+        margin-bottom: 0;
+        display: inline;
+    }
+
+    .Follow-Us{
+        margin-bottom: 0px;
     }

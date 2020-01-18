@@ -39,7 +39,7 @@
     ul li{
         display: inline-block;
         text-decoration: none;
-        margin: 10px 0 0 0;
+        /*margin: 10px 0 0 0;*/
     }
 
     ul li a{
@@ -322,3 +322,8 @@
         color: #666;
         font-weight: 300;
     }
+
+    .blog-right-part .container{
+        padding: 0;
+     }
+     
