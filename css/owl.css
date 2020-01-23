@@ -3,10 +3,16 @@
     padding: 0;
 }
 
-.testimonials .container {
-    max-width: 80%;
+.testimonials{
+    /*max-width: 80%;
     margin: auto;
     padding: 0 15px;
+    position: relative;*/
+}
+
+.testimonials-container{
+    max-width: 96%;
+    margin: auto;
     position: relative;
 }
 
